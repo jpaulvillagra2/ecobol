@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecobol SpA — Soluciones Textiles Reutilizables & DTF Premium</title>
+  <meta name="description" content="Comercialización y confección de bolsas ecológicas de crea cruda, policotex, biestrech, estuches, sacos y servicio de impresión DTF Premium a 56 cm en Santiago de Chile.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+<body>
+
+  <!-- Barra de Notificación Superior -->
+  <div class="top-notice">
+    🌿 Tienda Física en Recoleta (Antonia López de Bello 560, Local 20) | <span>Envíos a todo Chile</span>
+  </div>
+
+  <!-- Navbar Sticky -->
+  <header class="navbar">
+    <div class="brand-wrapper">
+      <div class="brand-logo-badge">☘️</div>
+      <div class="brand-titles">
+        <h1>ECOBOL</h1>
+        <p>Productos que se complementan, calidad que se nota</p>
+      </div>
+    </div>
+    <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="cat-btn" style="border-color: var(--color-verde-medio);">
+      💬 Contacto Directo
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <span class="hero-tag">🌱 Packaging Textil & Eco-Consciente</span>
+    <h2>Bolsas Reutilizables, Artículos Textiles & Impresión DTF</h2>
+    <p>Soluciones prácticas para emprendedores, empresas y particulares. Ventas al por mayor y al detalle en crea cruda, policotex y poliéster.</p>
+  </section>
+
+  <!-- Banner Promocional Servicio DTF 56cm -->
+  <div class="dtf-promo-banner">
+    <div class="dtf-header">
+      <h3>🖨️ Servicio de Impresión DTF Premium Ecobol</h3>
+      <span class="dtf-badge">Paño 56 cm de ancho</span>
+    </div>
+    <p style="font-size: 0.9rem; color: #E0EBDC;">
+      Trae tus diseños listos o paños con múltiples logos organizados. Impresión de alta definición, máxima adherencia y tacto suave para algodón crudo y mezclas textiles.
+    </p>
+    <div class="dtf-features">
+      <span class="dtf-pill">📐 56 cm por metro lineal</span>
+      <span class="dtf-pill">✨ Calidad fotográfica y alta densidad</span>
+      <span class="dtf-pill">📦 Entrega rápida en Recoleta o envíos</span>
+    </div>
+  </div>
+
+  <!-- Controles: Búsqueda y Filtros de Categoría -->
+  <div class="controls-container">
+    <input type="text" id="search-input" class="search-bar" placeholder="🔍 Buscar por producto, medida (ej: 35x40), material (crea, policotex, lona)...">
+    <div id="categories-container" class="categories-wrapper">
+      <!-- Inyectado dinámicamente -->
+    </div>
+  </div>
+
+  <!-- Grid del Catálogo de Productos -->
+  <main class="catalog-grid" id="catalog-grid">
+    <!-- Inyectado dinámicamente desde products.json -->
+  </main>
+
+  <!-- Barra Fija Inferior (Cotizador WhatsApp) -->
+  <footer class="sticky-cart-bar">
+    <div class="cart-summary-text">
+      <span id="cart-items-count" class="cart-items-count">0 artículos en cotización</span>
+      <span id="cart-total-amount" class="cart-total-amount">$0 CLP</span>
+    </div>
+    <a id="whatsapp-quote-btn" href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-whatsapp-quote">
+      💬 Cotizar por WhatsApp
+    </a>
+  </footer>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
