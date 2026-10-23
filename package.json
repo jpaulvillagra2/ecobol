@@ -1,0 +1,19 @@
+{
+  "name": "ecobol-web",
+  "version": "1.0.0",
+  "description": "Showroom Digital, Catálogo Interactivo y Cotizador WhatsApp para Ecobol SpA",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node -c src/app.js"
+  },
+  "keywords": [
+    "ecobol",
+    "bolsas-ecologicas",
+    "dtf",
+    "sublimacion",
+    "chile"
+  ],
+  "author": "Ecobol SpA & Nexos Digitales",
+  "license": "ISC"
+}
