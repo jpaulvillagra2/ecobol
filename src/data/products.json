@@ -8,7 +8,8 @@
     "descripcion": "100 hojas para productos de poliéster biestrech, sun out, lona natural y lonabel.",
     "precio_detalle": 4500,
     "iva_incluido": true,
-    "imagen_placeholder": "resma_sublimacion_poliester.jpg"
+    "imagen_placeholder": "resma_sublimacion_poliester.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-SUB-002",
@@ -19,7 +20,8 @@
     "descripcion": "Mínimo de venta 12 unid. ALGODON GRUESO, SUBLIMACION DIRECTA SIN PAPELES ESPECIALES.",
     "precio_detalle": 2049,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_40x45_sublimable.jpg"
+    "imagen_placeholder": "bolsa_40x45_sublimable.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   },
   {
     "id": "ECO-SUB-003",
@@ -30,7 +32,8 @@
     "descripcion": "Con fuelle 47 x 46 con fuelle de 8 cm asas de 65 cm.",
     "precio_detalle": 3500,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_47x46_fuelle_sublimable.jpg"
+    "imagen_placeholder": "bolsa_47x46_fuelle_sublimable.jpg",
+    "imagen": "./src/assets/products/media_1792785478867.png"
   },
   {
     "id": "ECO-CREA-001",
@@ -41,7 +44,8 @@
     "descripcion": "Crea cruda 100% algodón Bolsa 35 x 40 Asa con ascensores corredizos para ajustar al hombro.",
     "precio_detalle": 1785,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_asa_ajustable.jpg"
+    "imagen_placeholder": "bolsa_35x40_asa_ajustable.jpg",
+    "imagen": "./src/assets/products/media_1792785489259.png"
   },
   {
     "id": "ECO-IND-001",
@@ -52,7 +56,8 @@
     "descripcion": "Resistente, durable, baja absorción de humedad, versátil.",
     "precio_detalle": 4500,
     "iva_incluido": true,
-    "imagen_placeholder": "pechera_mujer_policotex_negra.jpg"
+    "imagen_placeholder": "pechera_mujer_policotex_negra.jpg",
+    "imagen": "./src/assets/products/media_1792786766968.png"
   },
   {
     "id": "ECO-CREA-002",
@@ -63,7 +68,8 @@
     "descripcion": "Bolsa de crea cruda utilizada para jabones artesanales, tazas, frutos secos, esencias.",
     "precio_detalle": 949,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_mini_16x14_crea.jpg"
+    "imagen_placeholder": "bolsa_mini_16x14_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786785362.png"
   },
   {
     "id": "ECO-CREA-003",
@@ -74,7 +80,8 @@
     "descripcion": "Crea 100% algodón 30 x 35 cm asa 75 cm.",
     "precio_detalle": 1136,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_30x35_crea.jpg"
+    "imagen_placeholder": "bolsa_30x35_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786823142.png"
   },
   {
     "id": "ECO-CREA-004",
@@ -85,7 +92,8 @@
     "descripcion": "Crea 100% algodón 35 x 40 cm asa 75 cm VALOR IVA INCLUIDO.",
     "precio_detalle": 1249,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_crea.jpg"
+    "imagen_placeholder": "bolsa_35x40_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786839797.png"
   },
   {
     "id": "ECO-CREA-005",
@@ -96,7 +104,8 @@
     "descripcion": "Crea 100% algodón 40 x 45 cm asa 75 cm VALOR IVA INCLUIDO.",
     "precio_detalle": 1397,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_40x45_crea.jpg"
+    "imagen_placeholder": "bolsa_40x45_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786857804.png"
   },
   {
     "id": "ECO-CREA-006",
@@ -107,7 +116,8 @@
     "descripcion": "Saco para botella de vino, hecho en crea cruda 100% algodón, en el cual entra una botella.",
     "precio_detalle": 1131,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_botella_vino_750ml.jpg"
+    "imagen_placeholder": "saco_botella_vino_750ml.jpg",
+    "imagen": "./src/assets/products/media_1792786876035.png"
   },
   {
     "id": "ECO-CREA-007",
@@ -118,7 +128,8 @@
     "descripcion": "Dos asas de Asa 35 cm Bolsa 20 x 25 Crea cruda 100% algodón.",
     "precio_detalle": 899,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_20x25_crea.jpg"
+    "imagen_placeholder": "bolsa_20x25_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786891160.png"
   },
   {
     "id": "ECO-CREA-008",
@@ -129,7 +140,8 @@
     "descripcion": "Saco para lentes en crea cruda 100% algodón.",
     "precio_detalle": 789,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_lentes_7x17_crea.jpg"
+    "imagen_placeholder": "saco_lentes_7x17_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786903087.png"
   },
   {
     "id": "ECO-IND-002",
@@ -140,7 +152,8 @@
     "descripcion": "Crea 100% algodón VALOR NETO.",
     "precio_detalle": 2844,
     "iva_incluido": false,
-    "imagen_placeholder": "pechera_hombre_crea.jpg"
+    "imagen_placeholder": "pechera_hombre_crea.jpg",
+    "imagen": "./src/assets/products/media_1792787947303.png"
   },
   {
     "id": "ECO-CREA-009",
@@ -151,7 +164,8 @@
     "descripcion": "Bolsa 35 x 40 crea cruda 100% algodón fondo plano.",
     "precio_detalle": 1650,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_fondo_negro.jpg"
+    "imagen_placeholder": "bolsa_35x40_fondo_negro.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-HOGAR-001",
@@ -162,7 +176,8 @@
     "descripcion": "Crea cruda 100% algodón CON cierre VALOR IVA INCLUIDO.",
     "precio_detalle": 1351,
     "iva_incluido": true,
-    "imagen_placeholder": "funda_cojin_35x35_crea.jpg"
+    "imagen_placeholder": "funda_cojin_35x35_crea.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   },
   {
     "id": "ECO-HOGAR-002",
@@ -173,7 +188,8 @@
     "descripcion": "Funda 40 x 40 en crea cruda con cierre.",
     "precio_detalle": 1646,
     "iva_incluido": true,
-    "imagen_placeholder": "funda_cojin_40x40_crea.jpg"
+    "imagen_placeholder": "funda_cojin_40x40_crea.jpg",
+    "imagen": "./src/assets/products/media_1792785478867.png"
   },
   {
     "id": "ECO-EST-001",
@@ -184,7 +200,8 @@
     "descripcion": "Crea 100% algodón 20 x 10 cm cierre color surtido VALOR IVA INCLUIDO.",
     "precio_detalle": 832,
     "iva_incluido": true,
-    "imagen_placeholder": "estuche_crea_20x10.jpg"
+    "imagen_placeholder": "estuche_crea_20x10.jpg",
+    "imagen": "./src/assets/products/media_1792785489259.png"
   },
   {
     "id": "ECO-MOCH-001",
@@ -195,7 +212,8 @@
     "descripcion": "Crea 100% algodón 35 x 40 cm Cordón blanco o negro VALOR CON IVA INCLUIDO.",
     "precio_detalle": 1489,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_35x40_crea.jpg"
+    "imagen_placeholder": "mochila_35x40_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786766968.png"
   },
   {
     "id": "ECO-SACO-001",
@@ -206,7 +224,8 @@
     "descripcion": "Crea 100% algodón 20 x 25 cm Cordón crudo VALOR CON IVA INCLUIDO.",
     "precio_detalle": 845,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_20x25_cordon_crudo.jpg"
+    "imagen_placeholder": "saco_20x25_cordon_crudo.jpg",
+    "imagen": "./src/assets/products/media_1792786785362.png"
   },
   {
     "id": "ECO-SACO-002",
@@ -217,7 +236,8 @@
     "descripcion": "Crea 100% algodón 25 x 30 cm Cordon crudo VALOR INCLUYE IVA.",
     "precio_detalle": 940,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_25x30_cordon_crudo.jpg"
+    "imagen_placeholder": "saco_25x30_cordon_crudo.jpg",
+    "imagen": "./src/assets/products/media_1792786823142.png"
   },
   {
     "id": "ECO-CREA-010",
@@ -228,7 +248,8 @@
     "descripcion": "Crea 100% algodón ASA negra 75 cm VALR IVA INCLUIDO.",
     "precio_detalle": 1250,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_asa_negra.jpg"
+    "imagen_placeholder": "bolsa_35x40_asa_negra.jpg",
+    "imagen": "./src/assets/products/media_1792786839797.png"
   },
   {
     "id": "ECO-SACO-003",
@@ -239,7 +260,8 @@
     "descripcion": "Crea 100% algodón 20 x 25 cm Cordón negro INCLUYE IVA.",
     "precio_detalle": 845,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_20x25_cordon_negro.jpg"
+    "imagen_placeholder": "saco_20x25_cordon_negro.jpg",
+    "imagen": "./src/assets/products/media_1792786857804.png"
   },
   {
     "id": "ECO-SACO-004",
@@ -250,7 +272,8 @@
     "descripcion": "Crea 100% algodón 25 x 30 cm Cordón negro INCLUYE IVA.",
     "precio_detalle": 940,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_25x30_cordon_negro.jpg"
+    "imagen_placeholder": "saco_25x30_cordon_negro.jpg",
+    "imagen": "./src/assets/products/media_1792786876035.png"
   },
   {
     "id": "ECO-BIEST-001",
@@ -261,7 +284,8 @@
     "descripcion": "Biestrech poliéster 35 x 40 cm asa 75 cm VALOR IVA INCLUIDO.",
     "precio_detalle": 1131,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_biestrech.jpg"
+    "imagen_placeholder": "bolsa_35x40_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792786891160.png"
   },
   {
     "id": "ECO-IND-003",
@@ -272,7 +296,8 @@
     "descripcion": "Biestrech poliéster VALOR IVA INCLUIDO PRODUCTO A PEDIDO.",
     "precio_detalle": 1309,
     "iva_incluido": true,
-    "imagen_placeholder": "pechera_nino_biestrech.jpg"
+    "imagen_placeholder": "pechera_nino_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792786903087.png"
   },
   {
     "id": "ECO-HOGAR-003",
@@ -283,7 +308,8 @@
     "descripcion": "Biestrech poliéster 35 x 35 cm cierre blanco VALOR IVA INCLUIDO.",
     "precio_detalle": 1550,
     "iva_incluido": true,
-    "imagen_placeholder": "cojin_35x35_biestrech.jpg"
+    "imagen_placeholder": "cojin_35x35_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792787947303.png"
   },
   {
     "id": "ECO-HOGAR-004",
@@ -294,7 +320,8 @@
     "descripcion": "Biestrech poliéster 40 x 40 cm VALOR IVA INCLUIDO.",
     "precio_detalle": 2264,
     "iva_incluido": true,
-    "imagen_placeholder": "cojin_40x40_biestrech.jpg"
+    "imagen_placeholder": "cojin_40x40_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-HOGAR-005",
@@ -305,7 +332,8 @@
     "descripcion": "Biestrech poliéster 30 x 30 cm cierre color blanco VALOR INCLUIDO.",
     "precio_detalle": 1131,
     "iva_incluido": true,
-    "imagen_placeholder": "funda_30x30_biestrech.jpg"
+    "imagen_placeholder": "funda_30x30_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   },
   {
     "id": "ECO-HOGAR-006",
@@ -316,7 +344,8 @@
     "descripcion": "Biestrech poliéster 35 x 35 cm cierre blanco VALOR INCLUIDO.",
     "precio_detalle": 1250,
     "iva_incluido": true,
-    "imagen_placeholder": "funda_35x35_biestrech.jpg"
+    "imagen_placeholder": "funda_35x35_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792785478867.png"
   },
   {
     "id": "ECO-HOGAR-007",
@@ -327,7 +356,8 @@
     "descripcion": "Biestrech poliéster 40 x 40 cm cierre blanco VALOR IVA INCLUIDO.",
     "precio_detalle": 1546,
     "iva_incluido": true,
-    "imagen_placeholder": "funda_40x40_biestrech.jpg"
+    "imagen_placeholder": "funda_40x40_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792785489259.png"
   },
   {
     "id": "ECO-EST-002",
@@ -338,7 +368,8 @@
     "descripcion": "Con forro monedero 13 x 8 en poliéster crudo forro en crea cruda en la parte de adentro.",
     "precio_detalle": 1070,
     "iva_incluido": true,
-    "imagen_placeholder": "monedero_poliester_crudo_forro.jpg"
+    "imagen_placeholder": "monedero_poliester_crudo_forro.jpg",
+    "imagen": "./src/assets/products/media_1792786766968.png"
   },
   {
     "id": "ECO-EST-003",
@@ -349,7 +380,8 @@
     "descripcion": "Con forro estuche 20 x 10 en poliéster crudo, forrado con crea cruda en la parte de adentro.",
     "precio_detalle": 1189,
     "iva_incluido": true,
-    "imagen_placeholder": "estuche_20x10_poliester_crudo_forro.jpg"
+    "imagen_placeholder": "estuche_20x10_poliester_crudo_forro.jpg",
+    "imagen": "./src/assets/products/media_1792786785362.png"
   },
   {
     "id": "ECO-MOCH-002",
@@ -360,7 +392,8 @@
     "descripcion": "Biestrech poliéster 30 x 35 cm cordón poliéster blanco VALOR IVA INCLUIDO.",
     "precio_detalle": 1210,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_30x35_cordon_blanco.jpg"
+    "imagen_placeholder": "mochila_30x35_cordon_blanco.jpg",
+    "imagen": "./src/assets/products/media_1792786823142.png"
   },
   {
     "id": "ECO-SACO-005",
@@ -371,7 +404,8 @@
     "descripcion": "Poliéster biestrech 25 x 30 Cordón blanco VALOR INCLUIDO.",
     "precio_detalle": 776,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_25x30_biestrech_blanco.jpg"
+    "imagen_placeholder": "saco_25x30_biestrech_blanco.jpg",
+    "imagen": "./src/assets/products/media_1792786839797.png"
   },
   {
     "id": "ECO-SACO-006",
@@ -382,7 +416,8 @@
     "descripcion": "Biestrech poliéster 20 x 25 cm Cordón poliéster blanco VALOR INCLUIDO.",
     "precio_detalle": 674,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_20x25_biestrech_blanco.jpg"
+    "imagen_placeholder": "saco_20x25_biestrech_blanco.jpg",
+    "imagen": "./src/assets/products/media_1792786857804.png"
   },
   {
     "id": "ECO-SACO-007",
@@ -393,7 +428,8 @@
     "descripcion": "Poliéster biestrech 30 * 35 Cordón blanco VALOR INCLUIDO.",
     "precio_detalle": 859,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_30x35_biestrech_blanco.jpg"
+    "imagen_placeholder": "saco_30x35_biestrech_blanco.jpg",
+    "imagen": "./src/assets/products/media_1792786876035.png"
   },
   {
     "id": "ECO-MOCH-003",
@@ -404,7 +440,8 @@
     "descripcion": "Biestrech poliéster 30 x 35 cm cordón poliéster negro VALOR INCLUIDO.",
     "precio_detalle": 1210,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_30x35_cordon_negro.jpg"
+    "imagen_placeholder": "mochila_30x35_cordon_negro.jpg",
+    "imagen": "./src/assets/products/media_1792786891160.png"
   },
   {
     "id": "ECO-SACO-008",
@@ -415,7 +452,8 @@
     "descripcion": "Poliéster biestrech 17 x 19 cm cordón cola de ratón negro VALOR IVA INCLUIDO.",
     "precio_detalle": 584,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_taza_17x19.jpg"
+    "imagen_placeholder": "saco_taza_17x19.jpg",
+    "imagen": "./src/assets/products/media_1792786903087.png"
   },
   {
     "id": "ECO-ACC-001",
@@ -426,7 +464,8 @@
     "descripcion": "Biestrech poliéster 6 X 6 cm Incluye argollas VALOR INCLUYE IVA.",
     "precio_detalle": 499,
     "iva_incluido": true,
-    "imagen_placeholder": "llavero_6x6_sublimable.jpg"
+    "imagen_placeholder": "llavero_6x6_sublimable.jpg",
+    "imagen": "./src/assets/products/media_1792787947303.png"
   },
   {
     "id": "ECO-EST-004",
@@ -437,7 +476,8 @@
     "descripcion": "Cosmetiquero 25 x 17 con fondo plano bicolor para sublimación.",
     "precio_detalle": 1500,
     "iva_incluido": true,
-    "imagen_placeholder": "cosmetiquero_bicolor_fondo_plano.jpg"
+    "imagen_placeholder": "cosmetiquero_bicolor_fondo_plano.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-EST-005",
@@ -448,7 +488,8 @@
     "descripcion": "Poli. biestrech color crudo y blanco 25 x 17cm Forro interior crea cruda Cierres surtidos.",
     "precio_detalle": 1427,
     "iva_incluido": true,
-    "imagen_placeholder": "cosmetiquero_doble_bicolor.jpg"
+    "imagen_placeholder": "cosmetiquero_doble_bicolor.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   },
   {
     "id": "ECO-BIEST-002",
@@ -459,7 +500,8 @@
     "descripcion": "Poliéster biestrech ASA 75 cm VALOR IVA INCLUIDO.",
     "precio_detalle": 1299,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_40x45_biestrech.jpg"
+    "imagen_placeholder": "bolsa_40x45_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792785478867.png"
   },
   {
     "id": "ECO-MOCH-004",
@@ -470,7 +512,8 @@
     "descripcion": "Mochila de 25 x 30 cm para sublimación en color blanco.",
     "precio_detalle": 1093,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_25x30_nino_blanco.jpg"
+    "imagen_placeholder": "mochila_25x30_nino_blanco.jpg",
+    "imagen": "./src/assets/products/media_1792785489259.png"
   },
   {
     "id": "ECO-NAV-001",
@@ -481,7 +524,8 @@
     "descripcion": "Saco de 20 x 25 cm poliéster rojo, idealmente para sublimación en color negro.",
     "precio_detalle": 674,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_navidad_20x25_rojo.jpg"
+    "imagen_placeholder": "saco_navidad_20x25_rojo.jpg",
+    "imagen": "./src/assets/products/media_1792786766968.png"
   },
   {
     "id": "ECO-NAV-002",
@@ -492,7 +536,8 @@
     "descripcion": "Saco de poliéster de 25 x 30 cm para navidad en color rojo, para sublimar con tinta negra.",
     "precio_detalle": 776,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_navidad_25x30_rojo.jpg"
+    "imagen_placeholder": "saco_navidad_25x30_rojo.jpg",
+    "imagen": "./src/assets/products/media_1792786785362.png"
   },
   {
     "id": "ECO-NAV-003",
@@ -503,7 +548,8 @@
     "descripcion": "Saco poliéster rojo 30 x 35 cm, para navidad.",
     "precio_detalle": 859,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_navidad_30x35_rojo.jpg"
+    "imagen_placeholder": "saco_navidad_30x35_rojo.jpg",
+    "imagen": "./src/assets/products/media_1792786823142.png"
   },
   {
     "id": "ECO-SACO-009",
@@ -514,7 +560,8 @@
     "descripcion": "Saco 20 x 25 bicolor color rojo con blanco para sublimación en poliéster o biestrech.",
     "precio_detalle": 699,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_20x25_bicolor_rojo.jpg"
+    "imagen_placeholder": "saco_20x25_bicolor_rojo.jpg",
+    "imagen": "./src/assets/products/media_1792786839797.png"
   },
   {
     "id": "ECO-SACO-010",
@@ -525,7 +572,8 @@
     "descripcion": "Saco 25 x 30 bicolor rojo y blanco para sublimación en poliéster o biestrech.",
     "precio_detalle": 801,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_25x30_bicolor_rojo_801.jpg"
+    "imagen_placeholder": "saco_25x30_bicolor_rojo_801.jpg",
+    "imagen": "./src/assets/products/media_1792786857804.png"
   },
   {
     "id": "ECO-SACO-011",
@@ -536,7 +584,8 @@
     "descripcion": "Saco 25 x 30 bicolor rojo con blanco para sublimación en poliéster o biestrech.",
     "precio_detalle": 884,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_25x30_bicolor_rojo_884.jpg"
+    "imagen_placeholder": "saco_25x30_bicolor_rojo_884.jpg",
+    "imagen": "./src/assets/products/media_1792786876035.png"
   },
   {
     "id": "ECO-MOCH-005",
@@ -547,7 +596,8 @@
     "descripcion": "Poliéster biestréch Medida 35 * 40 Cordón poliéster negro VALOR IVA INCLUIDO.",
     "precio_detalle": 1389,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_negro_poliester_35x40.jpg"
+    "imagen_placeholder": "mochila_negro_poliester_35x40.jpg",
+    "imagen": "./src/assets/products/media_1792786891160.png"
   },
   {
     "id": "ECO-ALG-001",
@@ -558,7 +608,8 @@
     "descripcion": "100% ALGODON ASA 55 CM VALOR INCLUYE IVA.",
     "precio_detalle": 2049,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_40x45_algodon_asa55.jpg"
+    "imagen_placeholder": "bolsa_40x45_algodon_asa55.jpg",
+    "imagen": "./src/assets/products/media_1792786903087.png"
   },
   {
     "id": "ECO-EST-006",
@@ -569,7 +620,8 @@
     "descripcion": "Monedero 13 x 8 de poliéster con forro interno, viene en colores surtidos.",
     "precio_detalle": 1070,
     "iva_incluido": true,
-    "imagen_placeholder": "monedero_13x8_forro_colores.jpg"
+    "imagen_placeholder": "monedero_13x8_forro_colores.jpg",
+    "imagen": "./src/assets/products/media_1792787947303.png"
   },
   {
     "id": "ECO-POLI-001",
@@ -580,7 +632,8 @@
     "descripcion": "Saco 20 x 25 policotex en color negro.",
     "precio_detalle": 875,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_20x25_policotex_negro.jpg"
+    "imagen_placeholder": "saco_20x25_policotex_negro.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-POLI-002",
@@ -591,7 +644,8 @@
     "descripcion": "Saco 25 x 30 policotex negro, para dtf, vinilo textil, sublifabric entre otros.",
     "precio_detalle": 970,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_25x30_policotex_negro.jpg"
+    "imagen_placeholder": "saco_25x30_policotex_negro.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   },
   {
     "id": "ECO-POLI-003",
@@ -602,7 +656,8 @@
     "descripcion": "Saco 30 x 35 policotex negro, sirve para dtf textil, vinilo textil, sublifabric, serigrafía.",
     "precio_detalle": 1089,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_30x35_policotex_negro.jpg"
+    "imagen_placeholder": "saco_30x35_policotex_negro.jpg",
+    "imagen": "./src/assets/products/media_1792785478867.png"
   },
   {
     "id": "ECO-POLI-004",
@@ -613,7 +668,8 @@
     "descripcion": "Bolsa 35 x 40 color negro Policotex con asa de 75 cm.",
     "precio_detalle": 1546,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_policotex_negro.jpg"
+    "imagen_placeholder": "bolsa_35x40_policotex_negro.jpg",
+    "imagen": "./src/assets/products/media_1792785489259.png"
   },
   {
     "id": "ECO-POLI-005",
@@ -624,7 +680,8 @@
     "descripcion": "Bolsa 45 x 40 Policotex fondo plano y asas e 75 cm.",
     "precio_detalle": 1890,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_45x40_policotex_fondo_plano.jpg"
+    "imagen_placeholder": "bolsa_45x40_policotex_fondo_plano.jpg",
+    "imagen": "./src/assets/products/media_1792786766968.png"
   },
   {
     "id": "ECO-POLI-006",
@@ -635,7 +692,8 @@
     "descripcion": "Mochila 35 x 40 Policotex con cordón negro, ideal para estampar con serigrafía, dtf, etc.",
     "precio_detalle": 1780,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_35x40_policotex_negro.jpg"
+    "imagen_placeholder": "mochila_35x40_policotex_negro.jpg",
+    "imagen": "./src/assets/products/media_1792786785362.png"
   },
   {
     "id": "ECO-PAPEL-001",
@@ -646,7 +704,8 @@
     "descripcion": "Tamaño carta COLORES CLAROS Papel para sublimacion Productos 100% Algodon.",
     "precio_detalle": 999,
     "iva_incluido": true,
-    "imagen_placeholder": "subli_pluss_hoja_carta.jpg"
+    "imagen_placeholder": "subli_pluss_hoja_carta.jpg",
+    "imagen": "./src/assets/products/media_1792786823142.png"
   },
   {
     "id": "ECO-LON-001",
@@ -657,7 +716,8 @@
     "descripcion": "neceser hecho en lona gruesa algodón 100% idealmente para dtf, vinilo textil, sublifabric.",
     "precio_detalle": 1467,
     "iva_incluido": true,
-    "imagen_placeholder": "neceser_lona_gruesa_algodon.jpg"
+    "imagen_placeholder": "neceser_lona_gruesa_algodon.jpg",
+    "imagen": "./src/assets/products/media_1792786839797.png"
   },
   {
     "id": "ECO-BIEST-003",
@@ -668,7 +728,8 @@
     "descripcion": "Material poliéster biestrech Medid 35 x 40 As 75 cm Bolsillo interno también sublimable.",
     "precio_detalle": 1845,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_con_bolsillo_biestrech.jpg"
+    "imagen_placeholder": "bolsa_35x40_con_bolsillo_biestrech.jpg",
+    "imagen": "./src/assets/products/media_1792786857804.png"
   },
   {
     "id": "ECO-CREA-011",
@@ -679,7 +740,8 @@
     "descripcion": "crea 100% algodon 6 x 28 cm cordon algodon VALOR IVA INCLUIDO.",
     "precio_detalle": 417,
     "iva_incluido": true,
-    "imagen_placeholder": "porta_cubiertos_crea_6x28.jpg"
+    "imagen_placeholder": "porta_cubiertos_crea_6x28.jpg",
+    "imagen": "./src/assets/products/media_1792786876035.png"
   },
   {
     "id": "ECO-POLI-007",
@@ -690,7 +752,8 @@
     "descripcion": "Bolsa 40 x 45 color negro Policotex.",
     "precio_detalle": 1746,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_40x45_policotex_negro.jpg"
+    "imagen_placeholder": "bolsa_40x45_policotex_negro.jpg",
+    "imagen": "./src/assets/products/media_1792786891160.png"
   },
   {
     "id": "ECO-CREA-012",
@@ -701,7 +764,8 @@
     "descripcion": "crea cruda 100% algodon asa 50 cm fuelle 9 cm ancho.",
     "precio_detalle": 1189,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_20x30_fuelle9_crea.jpg"
+    "imagen_placeholder": "bolsa_20x30_fuelle9_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786903087.png"
   },
   {
     "id": "ECO-PAPEL-002",
@@ -712,7 +776,8 @@
     "descripcion": "Venta por unidad Papel protector para sublimación y transfer Tamaño carta IVA INCLUIDO.",
     "precio_detalle": 200,
     "iva_incluido": true,
-    "imagen_placeholder": "papel_siliconado_carta.jpg"
+    "imagen_placeholder": "papel_siliconado_carta.jpg",
+    "imagen": "./src/assets/products/media_1792787947303.png"
   },
   {
     "id": "ECO-CREA-013",
@@ -723,7 +788,8 @@
     "descripcion": "Crea 100% algodon 50 * 50 cm asa 75 cm Con bolsillo delantero VALOR IVA INCLUIDO.",
     "precio_detalle": 2487,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_50x50_jumbo_crea.jpg"
+    "imagen_placeholder": "bolsa_50x50_jumbo_crea.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-CREA-014",
@@ -734,7 +800,8 @@
     "descripcion": "crea 100% algodon 13 x 8 cm cierre color surtido VALOR IVA INCLUIDO.",
     "precio_detalle": 713,
     "iva_incluido": true,
-    "imagen_placeholder": "monedero_crea_13x8.jpg"
+    "imagen_placeholder": "monedero_crea_13x8.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   },
   {
     "id": "ECO-CREA-015",
@@ -745,7 +812,8 @@
     "descripcion": "Crea 100% algodon 30 x 35 cm Cordón algodón VALOR IVA INCLUIDO.",
     "precio_detalle": 1050,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_30x35_cordon_algodon.jpg"
+    "imagen_placeholder": "saco_30x35_cordon_algodon.jpg",
+    "imagen": "./src/assets/products/media_1792785478867.png"
   },
   {
     "id": "ECO-BIEST-004",
@@ -756,7 +824,8 @@
     "descripcion": "poliester biestrech color crudo asa 75 cm sublimacion directa.",
     "precio_detalle": 1131,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_poliester_crudo.jpg"
+    "imagen_placeholder": "bolsa_35x40_poliester_crudo.jpg",
+    "imagen": "./src/assets/products/media_1792785489259.png"
   },
   {
     "id": "ECO-SUB-004",
@@ -767,7 +836,8 @@
     "descripcion": "Algodón grueso Cordón algodón trenzado IVA INCLUIDO.",
     "precio_detalle": 1940,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_algodon_sublimable.jpg"
+    "imagen_placeholder": "mochila_algodon_sublimable.jpg",
+    "imagen": "./src/assets/products/media_1792786766968.png"
   },
   {
     "id": "ECO-CREA-016",
@@ -778,7 +848,8 @@
     "descripcion": "Crea cruda 100% algodon asa 75 cm 1 broche metalico fuelle 13 cm en el fondo.",
     "precio_detalle": 2487,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_fuelle13_broche_crea.jpg"
+    "imagen_placeholder": "bolsa_35x40_fuelle13_broche_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786785362.png"
   },
   {
     "id": "ECO-MOCH-006",
@@ -789,7 +860,8 @@
     "descripcion": "COLOR CRUDO MATERIAL POLIESTER CORDON NEGRO SUBLIMACION DIRECTA.",
     "precio_detalle": 1339,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_35x40_crudo_poliester.jpg"
+    "imagen_placeholder": "mochila_35x40_crudo_poliester.jpg",
+    "imagen": "./src/assets/products/media_1792786823142.png"
   },
   {
     "id": "ECO-SACO-012",
@@ -800,7 +872,8 @@
     "descripcion": "Crea cruda 100% algodon Valor IVA INCLUIDO.",
     "precio_detalle": 583,
     "iva_incluido": true,
-    "imagen_placeholder": "saco_15x20_crea.jpg"
+    "imagen_placeholder": "saco_15x20_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786839797.png"
   },
   {
     "id": "ECO-MOCH-007",
@@ -811,7 +884,8 @@
     "descripcion": "POLIESTER BIESTRECH CORDON BLANCO O NEGRO SUBLIMACION DIRECTA.",
     "precio_detalle": 1339,
     "iva_incluido": true,
-    "imagen_placeholder": "mochila_35x40_blanco_poliester.jpg"
+    "imagen_placeholder": "mochila_35x40_blanco_poliester.jpg",
+    "imagen": "./src/assets/products/media_1792786857804.png"
   },
   {
     "id": "ECO-CREA-017",
@@ -822,7 +896,8 @@
     "descripcion": "Bolsa 35 x 40 Cordón Crudo, tela Crea Cruda 100% algodón.",
     "precio_detalle": 1547,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_con_cordon_crea.jpg"
+    "imagen_placeholder": "bolsa_35x40_con_cordon_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786876035.png"
   },
   {
     "id": "ECO-CREA-018",
@@ -833,7 +908,8 @@
     "descripcion": "crea cruda 100% algodon Con cierre asa 75 cm fondo plano.",
     "precio_detalle": 2690,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_45x40_cierre_fondo_plano_crea.jpg"
+    "imagen_placeholder": "bolsa_45x40_cierre_fondo_plano_crea.jpg",
+    "imagen": "./src/assets/products/media_1792786891160.png"
   },
   {
     "id": "ECO-ESP-001",
@@ -844,7 +920,8 @@
     "descripcion": "Balde 22 cm diámetro por 20 cm alto Metálico iva incluido.",
     "precio_detalle": 3927,
     "iva_incluido": true,
-    "imagen_placeholder": "balde_cervecero_metalico.jpg"
+    "imagen_placeholder": "balde_cervecero_metalico.jpg",
+    "imagen": "./src/assets/products/media_1792786903087.png"
   },
   {
     "id": "ECO-ESTA-001",
@@ -855,7 +932,8 @@
     "descripcion": "POLIESTER BICOLOR VALOR INCLUYE IVA.",
     "precio_detalle": 797,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_dulcera_horizontal_bicolor.jpg"
+    "imagen_placeholder": "bolsa_dulcera_horizontal_bicolor.jpg",
+    "imagen": "./src/assets/products/media_1792787947303.png"
   },
   {
     "id": "ECO-BIEST-005",
@@ -866,7 +944,8 @@
     "descripcion": "POLIESTER BIESTRECH COLOR CRUDO ASA 75 CM COLOR NEGRO SUBLIMACION DIRECTA.",
     "precio_detalle": 1131,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_poliester_asa_negra.jpg"
+    "imagen_placeholder": "bolsa_35x40_poliester_asa_negra.jpg",
+    "imagen": "./src/assets/products/media_1792785228216.png"
   },
   {
     "id": "ECO-BIEST-006",
@@ -877,6 +956,7 @@
     "descripcion": "POLIESTER BIESTRECH COLOR CRUDO FONDO NEGRO FONDO PLANO ASA NEGRA.",
     "precio_detalle": 1399,
     "iva_incluido": true,
-    "imagen_placeholder": "bolsa_35x40_poliester_fondo_negro.jpg"
+    "imagen_placeholder": "bolsa_35x40_poliester_fondo_negro.jpg",
+    "imagen": "./src/assets/products/media_1792785462396.png"
   }
 ]

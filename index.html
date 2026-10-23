@@ -3,80 +3,370 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecobol SpA — Soluciones Textiles Reutilizables & DTF Premium</title>
-  <meta name="description" content="Comercialización y confección de bolsas ecológicas de crea cruda, policotex, biestrech, estuches, sacos y servicio de impresión DTF Premium a 56 cm en Santiago de Chile.">
+  <title>EcoBol — Confección Textil Reutilizable & Packaging Consciente</title>
+  <meta name="description" content="Comercialización y confección de bolsas ecológicas, sacos, cosmetiqueras de crea cruda, policotex y artículos textiles personalizables en Recoleta, Santiago.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/index.css">
 </head>
-<body>
+<body class="nature-theme">
+
+  <!-- Fondo Botánico Ilustrado Vectorial -->
+  <div class="botanical-bg-layer" aria-hidden="true"></div>
 
   <!-- Barra de Notificación Superior -->
   <div class="top-notice">
-    🌿 Tienda Física en Recoleta (Antonia López de Bello 560, Local 20) | <span>Envíos a todo Chile</span>
+    🌿 Tienda Física en Recoleta: <strong>Antonia López de Bello 560, Local 20</strong> (Frente a Patronato) | <span>Envíos rápidos a todo Chile</span>
   </div>
 
-  <!-- Navbar Sticky -->
+  <!-- Navbar Sticky & Pestañas de Navegación Multi-Página SPA -->
   <header class="navbar">
-    <div class="brand-wrapper">
-      <div class="brand-logo-badge">☘️</div>
-      <div class="brand-titles">
-        <h1>ECOBOL</h1>
-        <p>Productos que se complementan, calidad que se nota</p>
-      </div>
+    <div class="brand-wrapper" onclick="switchPage('inicio')" style="cursor: pointer;">
+      <img src="./src/assets/logo_ecobol.png" alt="EcoBol Logo Oficial" class="navbar-official-logo">
+      <span class="sign-local-tag">Local 20</span>
     </div>
-    <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="cat-btn" style="border-color: var(--color-verde-medio);">
-      💬 Contacto Directo
+
+    <!-- Menú de Vistas (Pestañas Independientes) -->
+    <nav class="nav-links">
+      <button class="nav-tab-btn active" data-page="inicio" onclick="switchPage('inicio')">🏠 Inicio</button>
+      <button class="nav-tab-btn" data-page="catalogo" onclick="switchPage('catalogo')">🛍️ Catálogo</button>
+      <button class="nav-tab-btn" data-page="materiales" onclick="switchPage('materiales')">🧵 Materiales</button>
+      <button class="nav-tab-btn" data-page="nosotros" onclick="switchPage('nosotros')">🌿 Sobre Nosotros</button>
+      <button class="nav-tab-btn" data-page="tienda" onclick="switchPage('tienda')">📍 Tienda Física</button>
+    </nav>
+
+    <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-contact-top">
+      💬 WhatsApp (+56 9 9894 6593)
     </a>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <span class="hero-tag">🌱 Packaging Textil & Eco-Consciente</span>
-    <h2>Bolsas Reutilizables, Artículos Textiles & Impresión DTF</h2>
-    <p>Soluciones prácticas para emprendedores, empresas y particulares. Ventas al por mayor y al detalle en crea cruda, policotex y poliéster.</p>
-  </section>
+  <!-- CONTENEDOR PRINCIPAL DE PÁGINAS INDEPENDIENTES (SPA) -->
+  <main class="pages-wrapper">
 
-  <!-- Banner Promocional Servicio DTF 56cm -->
-  <div class="dtf-promo-banner">
-    <div class="dtf-header">
-      <h3>🖨️ Servicio de Impresión DTF Premium Ecobol</h3>
-      <span class="dtf-badge">Paño 56 cm de ancho</span>
-    </div>
-    <p style="font-size: 0.9rem; color: #E0EBDC;">
-      Trae tus diseños listos o paños con múltiples logos organizados. Impresión de alta definición, máxima adherencia y tacto suave para algodón crudo y mezclas textiles.
-    </p>
-    <div class="dtf-features">
-      <span class="dtf-pill">📐 56 cm por metro lineal</span>
-      <span class="dtf-pill">✨ Calidad fotográfica y alta densidad</span>
-      <span class="dtf-pill">📦 Entrega rápida en Recoleta o envíos</span>
-    </div>
-  </div>
+    <!-- ==============================================================
+         1. PÁGINA INICIO (HOME PORTAL)
+         ============================================================== -->
+    <section id="page-inicio" class="view-page active">
+      <div class="hero-container">
+        <!-- Letrero de Follaje con Logo Oficial Blanco Iluminado -->
+        <div class="hero-sign-showcase">
+          <div class="greenery-box">
+            <div class="ivy-overlay"></div>
+            <img src="./src/assets/logo_ecobol_white.png" alt="EcoBol Logo Neón" class="hero-neon-logo">
+            <div class="local-badge-pill">Local 20 • Antonia López de Bello 560</div>
+          </div>
+        </div>
 
-  <!-- Controles: Búsqueda y Filtros de Categoría -->
-  <div class="controls-container">
-    <input type="text" id="search-input" class="search-bar" placeholder="🔍 Buscar por producto, medida (ej: 35x40), material (crea, policotex, lona)...">
-    <div id="categories-container" class="categories-wrapper">
-      <!-- Inyectado dinámicamente -->
-    </div>
-  </div>
+        <div class="hero-badge">🌿 Packaging Textil Sostenible & Confección para Emprendedoras</div>
+        <h2>Productos que se Complementan, Calidad que se Nota</h2>
+        <p class="hero-subtitle">
+          Bolsas de crea cruda, tote bags, estuches, cosmetiqueras y sacos con cordón en telas nobles para emprendedores, comercios y marcas conscientes. Ventas al por mayor y al detalle.
+        </p>
+        
+        <div class="hero-cta-group">
+          <button class="btn-hero-primary" onclick="switchPage('catalogo')">🌸 Ver Catálogo de Productos</button>
+          <button class="btn-hero-secondary" onclick="switchPage('materiales')">🧵 Ficha de Materiales</button>
+          <button class="btn-hero-text" onclick="switchPage('nosotros')">Conoce Sobre Nosotros →</button>
+        </div>
 
-  <!-- Grid del Catálogo de Productos -->
-  <main class="catalog-grid" id="catalog-grid">
-    <!-- Inyectado dinámicamente desde products.json -->
+        <!-- Tarjetas de Acceso Directo a Secciones -->
+        <div class="quick-access-grid">
+          <div class="quick-card" onclick="switchPage('catalogo')">
+            <div class="qc-icon">👜</div>
+            <h4>Bolsas & Tote Bags</h4>
+            <p>100% Algodón crea cruda y Policotex anti-arrugas para packaging de marcas.</p>
+            <span class="qc-link">Ver catálogo →</span>
+          </div>
+          <div class="quick-card" onclick="switchPage('materiales')">
+            <div class="qc-icon">🧵</div>
+            <h4>Telas & Confección</h4>
+            <p>Conoce las características de la Crea Cruda, Policotex, Biestrech y mezclas.</p>
+            <span class="qc-link">Ver materiales →</span>
+          </div>
+          <div class="quick-card" onclick="switchPage('tienda')">
+            <div class="qc-icon">🏬</div>
+            <h4>Visítanos en Recoleta</h4>
+            <p>Local 20 con letrero de follaje verde. Toca las telas y revisa muestras reales.</p>
+            <span class="qc-link">Ver tienda →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         2. PÁGINA CATÁLOGO (COLECCIONES TEXTILES Y PACKAGING)
+         ============================================================== -->
+    <section id="page-catalogo" class="view-page">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="badge-pill">🛍️ Catálogo Textil</span>
+          <h2>Bolsas, Accesorios & Artículos Personalizables</h2>
+          <p>Explora nuestras líneas por categoría o busca medidas específicas (ej: 35x40, cosmetiquera, pechera) para cotizar por mayor o detalle.</p>
+        </div>
+
+        <!-- Burbujas de Categoría Estilo Tu Pon El Mono -->
+        <div class="catalog-bubbles-carousel" id="catalog-bubbles-container">
+          <!-- Generado dinámicamente por app.js -->
+        </div>
+
+        <!-- Barra de Búsqueda y Filtros Rápidos -->
+        <div class="catalog-filter-bar">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-bar" placeholder="🔍 Buscar por nombre, medida (35x40), tela (crea, lona, biestrech)...">
+          </div>
+          <div class="filter-count-badge" id="catalog-results-count">Cargando productos...</div>
+        </div>
+
+        <!-- Grid de Productos -->
+        <div id="products-grid" class="products-grid">
+          <!-- Renderizado por app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         3. PÁGINA FICHA TÉCNICA DE MATERIALES
+         ============================================================== -->
+    <section id="page-materiales" class="view-page">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="badge-pill">🧵 Ficha Técnica de Telas</span>
+          <h2>Conoce Nuestros Materiales y Confección</h2>
+          <p>Selecciona el material según el uso final, la resistencia deseada y el tipo de packaging que buscas.</p>
+        </div>
+
+        <div class="materials-grid">
+          <div class="material-card">
+            <div class="material-tag">100% Algodón</div>
+            <h4>Crea Cruda</h4>
+            <p>Algodón 100% de apariencia rústica, natural y color crudo cálido. Textura noble, transpirable y de máxima resistencia para Tote Bags y sacos.</p>
+            <div class="tech-badge">Resistencia: Alta • Tacto Natural</div>
+          </div>
+          <div class="material-card highlight">
+            <div class="material-tag">Algodón + Poliéster</div>
+            <h4>Policotex</h4>
+            <p>Mezcla balanceada destacada por su caída elegante y baja tendencia a arrugarse. Aspecto liso, suave al tacto y gran presencia corporativa.</p>
+            <div class="tech-badge">Caída Elegante • Anti-Arrugas</div>
+          </div>
+          <div class="material-card">
+            <div class="material-tag">Tono Claro</div>
+            <h4>Biestrech Poliéster</h4>
+            <p>Material de tono más claro y brillante que la crea cruda. Gran versatilidad para sacos de cordón oscuro, mochilas ligeras y accesorios.</p>
+            <div class="tech-badge">Liviano • Gran Versatilidad</div>
+          </div>
+          <div class="material-card">
+            <div class="material-tag">Forro Interior</div>
+            <h4>Poliéster con Forro Crea</h4>
+            <p>Estructura reforzada utilizada en estuches y cosmetiqueras. Exterior de poliéster crudo combinado con forro interior de crea para mayor durabilidad.</p>
+            <div class="tech-badge">Reforzado • Estructura Firme</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         4. PÁGINA SOBRE NOSOTROS (QUIÉNES SOMOS, PROPÓSITO, VALORES & MEDIO AMBIENTE)
+         ============================================================== -->
+    <section id="page-nosotros" class="view-page">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="badge-pill">🌿 Sobre Nosotros</span>
+          <h2>Identidad, Propósito y Compromiso EcoBol</h2>
+          <p>Nuestra historia, valores y promesa de sostenibilidad transparente.</p>
+        </div>
+
+        <!-- 1. Quiénes Somos y Propósito -->
+        <div class="about-grid" style="margin-bottom: 40px;">
+          <div class="about-card primary">
+            <span class="badge-pill">1. ¿Quiénes Somos?</span>
+            <h3>Nuestra Esencia Textil</h3>
+            <p>
+              En <strong>EcoBol</strong> nos dedicamos a la comercialización y fabricación de productos textiles reutilizables, bolsas ecológicas y artículos personalizables de confección cuidada.
+            </p>
+            <p>
+              Trabajamos para entregar soluciones prácticas y versátiles a emprendedores, comercios y personas que buscan packaging funcional, regalos corporativos y proyectos personalizados de alta durabilidad.
+            </p>
+            <div class="about-highlight">
+              ✨ Combinamos funcionalidad, confección cuidada y atención personalizada en un solo lugar.
+            </div>
+          </div>
+
+          <div class="about-card secondary">
+            <span class="badge-pill">2. Nuestro Propósito</span>
+            <h3>Consumo Consciente y Recursos Responsables</h3>
+            <p>
+              Contribuir a que personas, marcas y emprendimientos encuentren alternativas textiles reutilizables que respondan a sus necesidades, promoviendo un <strong>uso más consciente de los productos</strong> y una relación más responsable con los recursos del planeta.
+            </p>
+            <div class="promise-banner">
+              <strong>Promesa EcoBol:</strong> "Productos que se complementan, calidad que se nota."
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Nuestros Valores -->
+        <div class="section-header-centered" style="margin-top: 50px;">
+          <span class="badge-pill">3. Principios Rectores</span>
+          <h3>Valores que Guían Cada Confección</h3>
+        </div>
+        <div class="values-grid" style="margin-bottom: 40px;">
+          <div class="value-item">
+            <div class="value-icon">♻️</div>
+            <h4>Responsabilidad Ambiental</h4>
+            <p>Promovemos bolsas reutilizables frente a descartables de un solo uso, fomentando hábitos de consumo duraderos.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">⭐</div>
+            <h4>Calidad y Terminaciones</h4>
+            <p>Artículos bien presentados con costuras firmes y materiales seleccionados para alta durabilidad.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🎨</div>
+            <h4>Creatividad y Adaptabilidad</h4>
+            <p>Facilitamos que cada emprendedora adapte los artículos a sus campañas y necesidades comerciales.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🤝</div>
+            <h4>Compromiso Cercano</h4>
+            <p>Atención directa, acompañamiento en medidas especiales y asesoría para optimizar presupuestos.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🚀</div>
+            <h4>Apoyo a Emprendedores</h4>
+            <p>Packaging textil accesible para potenciar la presentación de productos de nuevos negocios.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">📐</div>
+            <h4>Versatilidad Modular</h4>
+            <p>Oferta complementaria: combina tote bags, cosmetiqueras y sacos bajo una misma línea gráfica.</p>
+          </div>
+        </div>
+
+        <!-- 4. Compromiso con el Medio Ambiente -->
+        <div class="eco-box" style="margin-top: 30px;">
+          <span class="badge-pill-light">4. Sustentabilidad Real</span>
+          <h2>Compromiso con el Medio Ambiente (Sin Greenwashing)</h2>
+          <p class="eco-intro">
+            En EcoBol creemos en la honestidad: un producto textil es sustentable si se <strong>reutiliza reiteradamente</strong> en el tiempo. Por eso priorizamos telas resistentes de algodón y costuras reforzadas para evitar la cultura de lo desechable.
+          </p>
+          <div class="eco-points-grid">
+            <div class="eco-point">
+              <span class="eco-num">01</span>
+              <div><strong>Reutilización Máxima:</strong> Piezas diseñadas para soportar cientos de salidas, ferias y compras cotidianas.</div>
+            </div>
+            <div class="eco-point">
+              <span class="eco-num">02</span>
+              <div><strong>Consumo Consciente:</strong> Asesoría en gramajes para evitar sobrantes de tela o bolsas endebles.</div>
+            </div>
+            <div class="eco-point">
+              <span class="eco-num">03</span>
+              <div><strong>Fibras Nobles:</strong> Crea cruda 100% algodón biodegradable y mezclas durables.</div>
+            </div>
+            <div class="eco-point">
+              <span class="eco-num">04</span>
+              <div><strong>Información Transparente:</strong> Especificamos dimensiones exactas y características reales.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         5. PÁGINA NUESTRA TIENDA & SHOWROOM
+         ============================================================== -->
+    <section id="page-tienda" class="view-page">
+      <div class="section-container">
+        <div class="store-feature-card">
+          <div class="store-img-col">
+            <div class="store-img-wrapper">
+              <img src="./src/assets/letrero_local_ecobol.png" alt="Letrero con jardín vertical y tienda EcoBol Local 20 Recoleta" class="store-photo" loading="lazy">
+              <div class="store-floating-tag">🌿 Local 20 • Fachada Follaje Verde</div>
+            </div>
+          </div>
+          <div class="store-info-col">
+            <span class="badge-pill">📍 Tienda Física & Showroom</span>
+            <h3>¡Ven a Conocer Nuestro Espacio en Recoleta!</h3>
+            <p class="store-lead">
+              Estamos ubicados en Antonia López de Bello 560, Local 20 (Recoleta, Santiago). Reconócenos al instante por nuestro <strong>letrero luminoso sobre jardín vertical con hojas y ramas naturales</strong>.
+            </p>
+            <div class="store-highlights-list">
+              <div class="highlight-item">
+                <span class="hl-icon">🧶</span>
+                <div>
+                  <strong>Toca las Telas y Muestras:</strong> Revisa el gramaje real de la Crea Cruda, Policotex y Biestrech antes de pedir por volumen.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-icon">🛍️</span>
+                <div>
+                  <strong>Revisa Confecciones en Vivo:</strong> Comprueba terminaciones, asas reforzadas y fuelles en nuestras bolsas de exhibición.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-icon">🏬</span>
+                <div>
+                  <strong>Atención Cálida & Retiro:</strong> Precios al por mayor y al detalle con facturación electrónica y despacho a regiones.
+                </div>
+              </div>
+            </div>
+            <div class="store-cta-row">
+              <a href="https://maps.google.com/?q=Antonia+Lopez+de+Bello+560+Recoleta" target="_blank" rel="noopener" class="btn-maps">
+                🗺️ Cómo Llegar (Google Maps)
+              </a>
+              <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-store-wa">
+                💬 Hablar con Tienda
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Barra Fija Inferior (Cotizador WhatsApp) -->
-  <footer class="sticky-cart-bar">
-    <div class="cart-summary-text">
-      <span id="cart-items-count" class="cart-items-count">0 artículos en cotización</span>
-      <span id="cart-total-amount" class="cart-total-amount">$0 CLP</span>
+  <!-- Footer Brand -->
+  <footer class="footer-brand">
+    <div class="footer-content">
+      <div class="footer-col main">
+        <div class="footer-logo">
+          <img src="./src/assets/logo_ecobol_white.png" alt="EcoBol Logo Oficial" class="footer-official-logo">
+          <span class="footer-tag">Local 20</span>
+        </div>
+        <p class="footer-slogan">"Productos que se complementan, calidad que se nota."</p>
+        <p class="footer-desc">
+          Soluciones textiles conscientes pensadas para acompañar tus ideas, fortalecer tu marca comercial y entregar artículos nobles con inspiración botánica natural.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>📍 Tienda y Retiro</h4>
+        <p><strong>Antonia López de Bello 560, Local 20</strong></p>
+        <p>Recoleta, Santiago de Chile (Frente a Patronato)</p>
+        <p>Envíos a todo el país vía Starken / Blue Express / Chilexpress</p>
+      </div>
+      <div class="footer-col">
+        <h4>💬 Canales Comerciales</h4>
+        <p>Ventas por mayor y al detalle</p>
+        <p>WhatsApp: <strong>+56 9 9894 6593</strong></p>
+        <p>Atención directa y confección a pedido</p>
+      </div>
     </div>
-    <a id="whatsapp-quote-btn" href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-whatsapp-quote">
-      💬 Cotizar por WhatsApp
-    </a>
+    <div class="footer-bottom">
+      © 2026 EcoBol SpA — Todos los derechos reservados. Plataforma Textil & Packaging Consciente.
+    </div>
   </footer>
+
+  <!-- Barra Flotante Sticky de Cotización a WhatsApp -->
+  <div id="sticky-quote-bar" class="sticky-quote-bar">
+    <div class="sticky-info">
+      <span id="cart-items-count" class="cart-count">0 artículos en cotización</span>
+      <span id="cart-total-amount" class="cart-total">$0</span>
+    </div>
+    <div class="sticky-actions">
+      <a id="whatsapp-quote-btn" href="#" target="_blank" rel="noopener" class="btn-whatsapp-quote">
+        💬 Cotizar por WhatsApp
+      </a>
+    </div>
+  </div>
 
   <script src="./src/app.js"></script>
 </body>
