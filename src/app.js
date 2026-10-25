@@ -1,30 +1,5 @@
-
-// Drawer Móvil
-window.toggleMobileDrawer = function() {
-  const drawer = document.getElementById('mobile-drawer-backdrop');
-  if (drawer) {
-    drawer.classList.toggle('open');
-  }
-};
-
-window.closeMobileDrawer = function() {
-  const drawer = document.getElementById('mobile-drawer-backdrop');
-  if (drawer) {
-    drawer.classList.remove('open');
-  }
-};
-
-window.drawerNav = function(pageId) {
-  closeMobileDrawer();
-  switchPage(pageId);
-  // Actualizar enlaces activos en drawer
-  document.querySelectorAll('.drawer-link-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-page') === pageId);
-  });
-};
-
 // ==========================================================================
-// ECOBOL SpA - CATÁLOGO TEXTIL ATÓMICO MOBILE-FIRST & EXPERIENCIA PREMIUM
+// ECOBOL SpA - CATÁLOGO TEXTIL ATÓMICO MOBILE-FIRST (TOOLBAR COMPACTA & COTIZADOR CONDICIONAL)
 // ==========================================================================
 
 const WHATSAPP_PHONE = '56998946593';
@@ -43,7 +18,7 @@ const formatCLP = (amount) => {
   }).format(amount || 0);
 };
 
-// Navegación Multi-Página
+// Navegación Multi-Página SPA
 window.switchPage = function(pageId) {
   document.querySelectorAll('.view-page').forEach(page => page.classList.remove('active'));
   document.querySelectorAll('.nav-tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -57,16 +32,36 @@ window.switchPage = function(pageId) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-// Carga inicial
+// Drawer Móvil
+window.toggleMobileDrawer = function() {
+  const drawer = document.getElementById('mobile-drawer-backdrop');
+  if (drawer) drawer.classList.toggle('open');
+};
+
+window.closeMobileDrawer = function() {
+  const drawer = document.getElementById('mobile-drawer-backdrop');
+  if (drawer) drawer.classList.remove('open');
+};
+
+window.drawerNav = function(pageId) {
+  closeMobileDrawer();
+  switchPage(pageId);
+  document.querySelectorAll('.drawer-link-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-page') === pageId);
+  });
+};
+
+// Carga Inicial
 async function init() {
   try {
     const res = await fetch('./src/data/products.json');
     allProducts = await res.json();
     filteredProducts = [...allProducts];
 
-    renderCategoryChips();
-    filterProducts(); // Actualiza conteo y renderiza catálogo sin textos huérfanos
+    populateCategoryDropdown();
+    filterProducts();
     setupEventListeners();
+    updateStickyBar(); // Se asegura de que la barra inicie 100% oculta en $0
   } catch (err) {
     console.error('Error cargando catálogo:', err);
     const countBadge = document.getElementById('catalog-results-count');
@@ -74,10 +69,10 @@ async function init() {
   }
 }
 
-// Chips/Pills táctiles de Categoría (Mobile-First horizontal scroll)
-function renderCategoryChips() {
-  const container = document.getElementById('catalog-bubbles-container');
-  if (!container) return;
+// Llenar el Dropdown de Categorías Compacto
+function populateCategoryDropdown() {
+  const select = document.getElementById('category-dropdown-select');
+  if (!select) return;
 
   const counts = { all: allProducts.length };
   allProducts.forEach(p => {
@@ -85,42 +80,46 @@ function renderCategoryChips() {
   });
 
   const categories = [
-    { id: 'all', label: 'Todo el Catálogo', icon: '✨', count: counts.all },
-    { id: 'Bolsas Ecológicas Reutilizables', label: 'Bolsas Ecológicas', icon: '👜', count: counts['Bolsas Ecológicas Reutilizables'] || 0 },
-    { id: 'Algodón Sublimable', label: 'Algodón Sublimable', icon: '🎨', count: counts['Algodón Sublimable'] || 0 },
-    { id: 'Biestrech & Mochilas', label: 'Biestrech & Morrales', icon: '🎒', count: counts['Biestrech & Mochilas'] || 0 },
-    { id: 'Hogar & Cojines', label: 'Hogar & Cojines', icon: '🏡', count: counts['Hogar & Cojines'] || 0 },
-    { id: 'Indumentaria & Pecheras', label: 'Pecheras & Delantales', icon: '🎽', count: counts['Indumentaria & Pecheras'] || 0 },
-    { id: 'Estuches & Lona', label: 'Estuches & Lona', icon: '👝', count: counts['Estuches & Lona'] || 0 },
-    { id: 'Artículos Promocionales', label: 'Promocionales & Tazones', icon: '☕', count: counts['Artículos Promocionales'] || 0 },
-    { id: 'Línea Estacional & Eventos', label: 'Navidad & Eventos', icon: '🎄', count: counts['Línea Estacional & Eventos'] || 0 }
+    { id: 'all', label: 'Todo el Catálogo', count: counts.all },
+    { id: 'Bolsas Ecológicas Reutilizables', label: 'Bolsas Ecológicas', count: counts['Bolsas Ecológicas Reutilizables'] || 0 },
+    { id: 'Algodón Sublimable', label: 'Algodón Sublimable', count: counts['Algodón Sublimable'] || 0 },
+    { id: 'Biestrech & Mochilas', label: 'Biestrech & Morrales', count: counts['Biestrech & Mochilas'] || 0 },
+    { id: 'Hogar & Cojines', label: 'Hogar & Cojines', count: counts['Hogar & Cojines'] || 0 },
+    { id: 'Indumentaria & Pecheras', label: 'Pecheras & Delantales', count: counts['Indumentaria & Pecheras'] || 0 },
+    { id: 'Estuches & Lona', label: 'Estuches & Lona', count: counts['Estuches & Lona'] || 0 },
+    { id: 'Artículos Promocionales', label: 'Promocionales & Tazones', count: counts['Artículos Promocionales'] || 0 },
+    { id: 'Línea Estacional & Eventos', label: 'Navidad & Eventos', count: counts['Línea Estacional & Eventos'] || 0 }
   ];
 
-  container.innerHTML = categories.map(b => {
-    const isSelected = currentCategory === b.id;
-    return `
-      <button type="button" class="category-chip ${isSelected ? 'active' : ''}" data-cat="${b.id}">
-        <span class="chip-icon">${b.icon}</span>
-        <span class="chip-label">${b.label}</span>
-        <span class="chip-count">${b.count}</span>
-      </button>
-    `;
+  select.innerHTML = categories.map(c => {
+    return `<option value="${c.id}">${c.label} (${c.count})</option>`;
   }).join('');
-
-  container.querySelectorAll('.category-chip').forEach(btn => {
-    btn.addEventListener('click', () => {
-      currentCategory = btn.getAttribute('data-cat');
-      container.querySelectorAll('.category-chip').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      filterProducts();
-    });
-  });
 }
+
+window.onCategorySelectChange = function(catId) {
+  currentCategory = catId;
+  filterProducts();
+};
+
+window.clearSearch = function() {
+  const input = document.getElementById('search-input');
+  const btn = document.getElementById('search-clear-btn');
+  if (input) {
+    input.value = '';
+    if (btn) btn.style.display = 'none';
+    filterProducts();
+  }
+};
 
 // Filtrar productos
 function filterProducts() {
   const searchInput = document.getElementById('search-input');
+  const clearBtn = document.getElementById('search-clear-btn');
   const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+  if (clearBtn) {
+    clearBtn.style.display = query ? 'flex' : 'none';
+  }
 
   filteredProducts = allProducts.filter(prod => {
     const matchesCat = (currentCategory === 'all') || (prod.categoria === currentCategory);
@@ -134,10 +133,9 @@ function filterProducts() {
     return matchesCat && matchesQuery;
   });
 
-  // Eliminar inmediatamente el "Cargando productos..."
   const countBadge = document.getElementById('catalog-results-count');
   if (countBadge) {
-    countBadge.innerText = `${filteredProducts.length} artículo${filteredProducts.length === 1 ? '' : 's'} disponible${filteredProducts.length === 1 ? '' : 's'}`;
+    countBadge.innerText = `${filteredProducts.length} artículo${filteredProducts.length === 1 ? '' : 's'}`;
   }
 
   renderCatalog();
@@ -179,7 +177,7 @@ function renderCatalog() {
             <div class="price-box">
               <span class="price-label">Detalle (1 un.)</span>
               <span class="price-val">${formatCLP(prod.precio_detalle)}</span>
-              <span class="price-iva">Mayorista: ${formatCLP(prod.precio_mayorista)}</span>
+              <span class="price-iva">Mayor: ${formatCLP(prod.precio_mayorista)}</span>
             </div>
             
             <div class="card-actions">
@@ -202,7 +200,7 @@ function renderCatalog() {
   }).join('');
 }
 
-// Modal de Detalle con Especificaciones Espaciadas
+// Modal de Detalle de Producto
 window.openProductModal = function(productId) {
   const prod = allProducts.find(p => p.id === productId);
   if (!prod) return;
@@ -218,11 +216,9 @@ window.openProductModal = function(productId) {
   document.getElementById('modal-product-price-det').innerText = formatCLP(prod.precio_detalle);
   document.getElementById('modal-product-price-may').innerText = formatCLP(prod.precio_mayorista);
 
-  // Formatear especificaciones con párrafos legibles
   const descEl = document.getElementById('modal-product-desc');
   if (descEl) {
     let cleanDesc = prod.descripcion || '';
-    // Separar frases por puntos o barras
     const parts = cleanDesc.split(/[.|]/).map(s => s.trim()).filter(s => s.length > 2);
     if (parts.length > 1) {
       descEl.innerHTML = parts.map(p => `<p class="desc-bullet">• ${p}</p>`).join('');
@@ -282,7 +278,7 @@ window.addModalProductToCart = function() {
   const addBtn = document.getElementById('modal-add-btn');
   if (addBtn) {
     addBtn.innerText = `✅ ¡Listo! ${qty} un. en cotización`;
-    setTimeout(() => closeProductModal(), 500);
+    setTimeout(() => closeProductModal(), 450);
   }
 };
 
@@ -312,6 +308,8 @@ window.updateQty = function(productId, delta) {
   renderCatalog();
 };
 
+// GESTIÓN DETERMINISTA DE LA BARRA STICKY INFERIOR:
+// SOLO APARECE SI TOTALITEMS > 0. EN VACÍO QUEDA 100% OCULTA.
 function updateStickyBar() {
   const bar = document.getElementById('sticky-quote-bar');
   const countSpan = document.getElementById('cart-items-count');
@@ -320,6 +318,19 @@ function updateStickyBar() {
 
   const items = Object.values(cart);
   const totalItems = items.reduce((sum, item) => sum + item.qty, 0);
+
+  if (!bar) return;
+
+  if (totalItems <= 0) {
+    // 100% OCULTO EN ESTADO VACÍO
+    bar.style.display = 'none';
+    bar.classList.remove('visible');
+    return;
+  }
+
+  // Si hay al menos 1 producto: mostrar barra animada
+  bar.style.display = 'flex';
+  bar.classList.add('visible');
 
   const isWholesale = totalItems >= 12;
   const totalPrice = items.reduce((sum, item) => {
@@ -334,31 +345,17 @@ function updateStickyBar() {
     totalSpan.innerText = formatCLP(totalPrice);
   }
 
-  if (bar) {
-    if (totalItems > 0) {
-      bar.classList.add('visible');
-    } else {
-      bar.classList.remove('visible');
-    }
-  }
-
   if (waBtn) {
-    if (totalItems === 0) {
-      waBtn.style.opacity = '0.7';
-      waBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('¡Hola EcoBol! Quiero consultar por sus productos textiles del catálogo.')}`;
-    } else {
-      waBtn.style.opacity = '1';
-      let message = `¡Hola EcoBol SpA! Deseo solicitar cotización para los siguientes artículos:\n\n`;
-      items.forEach(item => {
-        const unitPrice = isWholesale ? (item.product.precio_mayorista || item.product.precio_detalle) : item.product.precio_detalle;
-        message += `• ${item.qty}x ${item.product.nombre} (SKU: ${item.product.sku || item.product.id}) - ${formatCLP(unitPrice * item.qty)}\n`;
-      });
-      message += `\n📦 Total artículos: ${totalItems} un.`;
-      message += `\n💰 Total estimado: ${formatCLP(totalPrice)} (IVA incluido ${isWholesale ? '- Tarifa Mayorista' : ''})`;
-      message += `\n\n¿Tienen disponibilidad y tiempos de confección/entrega?`;
+    let message = `¡Hola EcoBol SpA! Deseo solicitar cotización para los siguientes artículos:\n\n`;
+    items.forEach(item => {
+      const unitPrice = isWholesale ? (item.product.precio_mayorista || item.product.precio_detalle) : item.product.precio_detalle;
+      message += `• ${item.qty}x ${item.product.nombre} (SKU: ${item.product.sku || item.product.id}) - ${formatCLP(unitPrice * item.qty)}\n`;
+    });
+    message += `\n📦 Total artículos: ${totalItems} un.`;
+    message += `\n💰 Total estimado: ${formatCLP(totalPrice)} (IVA incluido ${isWholesale ? '- Tarifa Mayorista' : ''})`;
+    message += `\n\n¿Tienen disponibilidad y tiempos de confección/entrega?`;
 
-      waBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
-    }
+    waBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
   }
 }
 

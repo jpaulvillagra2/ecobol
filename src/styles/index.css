@@ -1765,3 +1765,164 @@ header.navbar {
     height: 32px !important;
   }
 }
+
+
+/* ==========================================================================
+   TOOLBAR COMPACTA & BARRA CONDICIONAL (Refinamiento Espacial Mobile)
+   ========================================================================== */
+
+/* 1. Ocultamiento Absoluto Inicial de la Barra Sticky (Cero Estado Vacío) */
+.sticky-quote-bar {
+  display: none !important; /* Se activa via app.js sólo cuando cart > 0 */
+  position: fixed !important;
+  bottom: 14px !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(30px) !important;
+  opacity: 0 !important;
+  z-index: 1000 !important;
+  background: rgba(18, 36, 24, 0.97) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(199, 173, 115, 0.45) !important;
+  padding: 8px 16px !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45) !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  max-width: 480px !important;
+  width: calc(100% - 24px) !important;
+  height: 52px !important;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.sticky-quote-bar.visible {
+  display: flex !important;
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+/* 2. Toolbar Compacta de Catálogo */
+.catalog-toolbar-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(111, 155, 120, 0.25);
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.toolbar-search-row {
+  width: 100%;
+}
+
+.search-input-wrap-compact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fdfcf9;
+  border: 1.5px solid rgba(111, 155, 120, 0.3);
+  border-radius: 12px;
+  padding: 0 12px;
+  height: 42px;
+  transition: border-color 0.2s ease;
+}
+
+.search-input-wrap-compact:focus-within {
+  border-color: #355b43;
+  box-shadow: 0 0 0 3px rgba(53, 91, 67, 0.1);
+}
+
+.search-icon {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.search-bar-compact {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #355b43;
+}
+
+.search-clear-btn {
+  background: transparent;
+  border: none;
+  color: #888888;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.toolbar-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.category-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f4f0e5;
+  border: 1.5px solid rgba(111, 155, 120, 0.35);
+  border-radius: 10px;
+  padding: 0 10px;
+  height: 38px;
+  flex: 1;
+}
+
+.select-label-icon {
+  font-size: 0.95rem;
+}
+
+.category-dropdown-select {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #355b43;
+  cursor: pointer;
+}
+
+.results-badge-compact {
+  background: #355b43;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 8px 12px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .catalog-toolbar-compact {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .search-input-wrap-compact {
+    height: 38px;
+  }
+  .search-bar-compact {
+    font-size: 0.82rem;
+  }
+  .category-select-wrapper {
+    height: 36px;
+  }
+  .category-dropdown-select {
+    font-size: 0.78rem;
+  }
+  .results-badge-compact {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+}

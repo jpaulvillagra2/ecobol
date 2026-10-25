@@ -158,20 +158,29 @@
           <p>Explora nuestras líneas por categoría o busca medidas específicas (ej: 35x40, cosmetiquera, pechera) para cotizar por mayor o detalle.</p>
         </div>
 
-        <!-- Burbujas de Categoría Estilo Tu Pon El Mono -->
-        <div class="catalog-bubbles-carousel" id="catalog-bubbles-container">
-          <!-- Generado dinámicamente por app.js -->
-        </div>
-
-        <!-- Barra de Búsqueda y Filtros Rápidos -->
-        <div class="catalog-filter-bar">
-          <div class="search-input-wrap">
-            <input type="text" id="search-input" class="search-bar" placeholder="🔍 Buscar por nombre, medida (35x40), tela (crea, lona, biestrech)...">
+                <!-- Barra de Herramientas de Catálogo Compacta Mobile-First -->
+        <div class="catalog-toolbar-compact">
+          <div class="toolbar-search-row">
+            <div class="search-input-wrap-compact">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="search-input" class="search-bar-compact" placeholder="Buscar por modelo, tela o medida (ej: 35x40)...">
+              <button id="search-clear-btn" class="search-clear-btn" style="display:none;" onclick="clearSearch()" aria-label="Limpiar">✕</button>
+            </div>
           </div>
-          <div class="filter-count-badge" id="catalog-results-count">Cargando catálogo textil...</div>
+
+          <div class="toolbar-filter-row">
+            <div class="category-select-wrapper">
+              <span class="select-label-icon">🏷️</span>
+              <select id="category-dropdown-select" class="category-dropdown-select" onchange="onCategorySelectChange(this.value)">
+                <!-- Opciones inyectadas dinámicamente por app.js -->
+              </select>
+            </div>
+            <div class="results-badge-compact" id="catalog-results-count">
+              198 artículos
+            </div>
+          </div>
         </div>
 
-        <!-- Grid de Productos -->
         <div id="products-grid" class="products-grid">
           <!-- Renderizado por app.js -->
         </div>
