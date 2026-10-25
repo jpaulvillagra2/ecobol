@@ -1,0 +1,18 @@
+# Dependencias y Cache
+node_modules/
+.cache/
+.publish/
+-p/
+
+# Materia Prima y Documentacion Pesada Local
+Catalogo completo ecobol/
+
+# Datos intermedios de OCR (los productos ya estan en src/data/products.json)
+src/data/ocr_raw_catalog.json
+src/data/products_catalog_extracted.json
+src/data/products_master.json
+
+# Sistema y logs
+.DS_Store
+Thumbs.db
+*.log

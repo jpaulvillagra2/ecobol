@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/index.css">
+  <link rel="stylesheet" href="./src/styles/modal.css">
 </head>
 <body class="nature-theme">
 
@@ -355,6 +356,69 @@
     </div>
   </footer>
 
+  
+  <!-- Modal de Detalle de Producto -->
+  <!-- Modal de Detalle de Producto -->
+  <div id="product-modal" class="product-modal-backdrop" style="display:none;">
+    <div class="product-modal-card">
+      <button id="btn-close-modal" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-image-col">
+          <img id="modal-product-img" src="" alt="" class="modal-img">
+          <span id="modal-product-badge" class="modal-badge-cat"></span>
+        </div>
+        <div class="modal-info-col">
+          <div class="modal-header-info">
+            <span id="modal-product-sku" class="modal-sku"></span>
+            <h2 id="modal-product-title" class="modal-title"></h2>
+            <div class="modal-meta-tags">
+              <span id="modal-product-medidas" class="modal-meta-tag"></span>
+              <span id="modal-product-material" class="modal-meta-tag"></span>
+            </div>
+          </div>
+
+          <div class="modal-price-card">
+            <div class="modal-price-row">
+              <div class="price-col">
+                <span class="modal-price-label">Precio Detalle (1 a 11 un.)</span>
+                <span id="modal-product-price-det" class="modal-price-main"></span>
+              </div>
+              <div class="price-col wholesale">
+                <span class="modal-price-label">Precio Mayorista (12+ un.)</span>
+                <span id="modal-product-price-may" class="modal-price-accent"></span>
+                <span class="modal-iva-tag">⭐ IVA Incluido</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-desc-box">
+            <h4>Especificaciones & Usos</h4>
+            <p id="modal-product-desc" class="modal-desc"></p>
+          </div>
+
+          <!-- Selector de Cantidad Dinámico y Botón Añadir -->
+          <div class="modal-qty-container">
+            <span class="qty-control-label">Cantidad a cotizar:</span>
+            <div class="qty-stepper-row">
+              <div class="qty-stepper">
+                <button type="button" class="btn-step" onclick="changeModalQty(-1)">-</button>
+                <input type="number" id="modal-qty-input" class="qty-input" value="1" min="1" max="5000">
+                <button type="button" class="btn-step" onclick="changeModalQty(1)">+</button>
+              </div>
+              <div class="qty-presets">
+                <button type="button" class="btn-preset" onclick="setModalQty(6)">+6 un.</button>
+                <button type="button" class="btn-preset highlight" onclick="setModalQty(12)">+12 un. (Mayorista)</button>
+              </div>
+            </div>
+
+            <button id="modal-add-btn" class="btn-modal-add-main" onclick="addModalProductToCart()">
+              🛒 Añadir a Cotización
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Barra Flotante Sticky de Cotización a WhatsApp -->
   <div id="sticky-quote-bar" class="sticky-quote-bar">
     <div class="sticky-info">

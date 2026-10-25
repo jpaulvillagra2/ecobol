@@ -1322,3 +1322,138 @@ header.navbar {
     font-size: 1.15rem;
   }
 }
+
+
+/* ==========================================================================
+   MOBILE-FIRST REFACTOR (Píldora flotante compacta y Navbar sin desbordes)
+   ========================================================================== */
+
+/* Navbar en Mobile */
+@media (max-width: 768px) {
+  header.navbar {
+    padding: 8px 12px !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+  }
+
+  .nav-brand {
+    flex-shrink: 0;
+  }
+
+  .navbar-official-logo {
+    height: 32px !important;
+    width: auto !important;
+  }
+
+  .nav-links {
+    order: 2 !important;
+    width: auto !important;
+    display: flex !important;
+    gap: 4px !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    padding: 3px !important;
+    border-radius: 20px !important;
+    overflow-x: auto !important;
+    scrollbar-width: none !important; /* Firefox */
+  }
+  .nav-links::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .nav-tab-btn {
+    font-size: 0.72rem !important;
+    padding: 5px 8px !important;
+    border-radius: 16px !important;
+    white-space: nowrap !important;
+  }
+
+  .btn-contact-top {
+    display: none !important; /* Ocultar para dar todo el protagonismo a las pestañas */
+  }
+}
+
+/* Barra Sticky de Cotización Flotante Píldora Compacta */
+.sticky-quote-bar {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(18, 36, 24, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(199, 173, 115, 0.4);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 540px;
+  width: calc(100% - 24px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sticky-info {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.cart-count {
+  color: #D2E0D5;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cart-total {
+  color: #F4F0E5;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.btn-whatsapp-quote {
+  background: #25D366;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-whatsapp-quote:hover {
+  background: #1EBE5D;
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .sticky-quote-bar {
+    bottom: 10px;
+    padding: 6px 12px;
+    gap: 8px;
+    width: calc(100% - 16px);
+  }
+  .cart-count {
+    font-size: 0.72rem;
+  }
+  .cart-total {
+    font-size: 1.05rem;
+  }
+  .btn-whatsapp-quote {
+    padding: 7px 12px;
+    font-size: 0.78rem;
+  }
+}
