@@ -1,11 +1,12 @@
 /* ==========================================================================
-   PRODUCT DETAIL MODAL - ECOBOL SpA (Mobile-First & Clean UI)
+   PRODUCT DETAIL MODAL & UNIFIED CARD STEPPER - ECOBOL SpA
    ========================================================================== */
 
+/* Backdrop y Modal */
 .product-modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(20, 30, 23, 0.78);
+  background: rgba(18, 30, 22, 0.82);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 9999;
@@ -13,7 +14,7 @@
   align-items: center;
   justify-content: center;
   padding: 12px;
-  animation: fadeInModal 0.22s ease-out;
+  animation: fadeInModal 0.2s ease-out;
 }
 
 @keyframes fadeInModal {
@@ -25,17 +26,17 @@
   position: relative;
   background: #ffffff;
   border-radius: 20px;
-  max-width: 840px;
+  max-width: 820px;
   width: 100%;
-  max-height: 92vh;
+  max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(111, 155, 120, 0.35);
-  animation: scaleUpModal 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: scaleUpModal 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes scaleUpModal {
-  from { transform: scale(0.96) translateY(10px); opacity: 0; }
+  from { transform: scale(0.96) translateY(8px); opacity: 0; }
   to { transform: scale(1) translateY(0); opacity: 1; }
 }
 
@@ -43,7 +44,7 @@
   position: absolute;
   top: 12px;
   right: 14px;
-  background: rgba(244, 240, 229, 0.95);
+  background: #f4f0e5;
   border: 1px solid rgba(111, 155, 120, 0.4);
   font-size: 24px;
   line-height: 1;
@@ -54,13 +55,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   transition: all 0.2s ease;
   z-index: 10;
 }
 
 .modal-close-btn:hover {
-  background: var(--color-verde-oscuro);
+  background: #355b43;
   color: #ffffff;
   transform: rotate(90deg);
 }
@@ -82,13 +83,13 @@
 
 .modal-image-col {
   position: relative;
-  background: var(--color-crudo);
+  background: #f4f0e5;
   border-radius: 16px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 260px;
+  min-height: 250px;
   border: 1px solid rgba(111, 155, 120, 0.2);
 }
 
@@ -97,14 +98,13 @@
   height: 100%;
   max-height: 380px;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 
 .modal-badge-cat {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: var(--color-verde-oscuro);
+  background: #355b43;
   color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
@@ -123,7 +123,7 @@
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 800;
-  color: var(--color-verde-medio);
+  color: #6f9b78;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -132,7 +132,7 @@
 .modal-title {
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   line-height: 1.25;
   margin-bottom: 10px;
 }
@@ -145,9 +145,9 @@
 }
 
 .modal-meta-tag {
-  background: var(--color-crudo);
+  background: #f4f0e5;
   border: 1px solid rgba(111, 155, 120, 0.35);
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   padding: 5px 10px;
   border-radius: 8px;
   font-size: 0.8rem;
@@ -182,7 +182,7 @@
 .modal-price-label {
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--color-verde-medio);
+  color: #6f9b78;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 2px;
@@ -191,7 +191,7 @@
 .modal-price-main {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--color-verde-oscuro);
+  color: #355b43;
 }
 
 .modal-price-accent {
@@ -207,30 +207,41 @@
   margin-top: 1px;
 }
 
+/* Especificaciones Espaciadas y Legibles */
 .modal-desc-box {
   margin-bottom: 16px;
   background: #fbfbf8;
-  border-radius: 10px;
-  padding: 10px 12px;
-  border: 1px solid rgba(111, 155, 120, 0.15);
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid rgba(111, 155, 120, 0.2);
 }
 
 .modal-desc-box h4 {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  color: var(--color-verde-medio);
-  margin-bottom: 4px;
+  color: #6f9b78;
+  margin-bottom: 8px;
   font-weight: 800;
 }
 
 .modal-desc {
-  font-size: 0.88rem;
-  line-height: 1.45;
-  color: #444444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333333;
 }
 
-/* Selector de Cantidades y Botón */
+.desc-bullet {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  color: #3e4a41;
+}
+
+.desc-bullet:last-child {
+  margin-bottom: 0;
+}
+
+/* Selector de Cantidad en Modal */
 .modal-qty-container {
   display: flex;
   flex-direction: column;
@@ -241,7 +252,7 @@
 .qty-control-label {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -256,8 +267,8 @@
 .qty-stepper {
   display: inline-flex;
   align-items: center;
-  background: var(--color-crudo);
-  border: 1.5px solid var(--color-verde-medio);
+  background: #f4f0e5;
+  border: 1.5px solid #6f9b78;
   border-radius: 10px;
   overflow: hidden;
   height: 42px;
@@ -270,9 +281,8 @@
   border: none;
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   cursor: pointer;
-  transition: background 0.15s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,14 +300,8 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 800;
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   outline: none;
-}
-
-.qty-input::-webkit-inner-spin-button,
-.qty-input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .qty-presets {
@@ -306,19 +310,14 @@
 }
 
 .btn-preset {
-  background: var(--color-crudo);
+  background: #f4f0e5;
   border: 1px solid rgba(111, 155, 120, 0.4);
-  color: var(--color-verde-oscuro);
+  color: #355b43;
   border-radius: 8px;
   padding: 8px 10px;
   font-size: 0.78rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.btn-preset:hover {
-  background: var(--color-verde-suave);
 }
 
 .btn-preset.highlight {
@@ -328,7 +327,7 @@
 }
 
 .btn-modal-add-main {
-  background: var(--color-verde-oscuro);
+  background: #355b43;
   color: #ffffff;
   border: none;
   border-radius: 12px;
@@ -348,16 +347,65 @@
 .btn-modal-add-main:hover {
   background: #233f2e;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(53, 91, 67, 0.3);
 }
 
-/* Hover en tarjetas */
-.product-card {
+/* ==========================================================================
+   UNIFIED CARD STEPPER (Selector en la tarjeta exterior)
+   ========================================================================== */
+
+.btn-card-add {
+  background: #355b43;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px -8px rgba(53, 91, 67, 0.2);
+.btn-card-add:hover {
+  background: #233f2e;
+  transform: scale(1.03);
+}
+
+.card-stepper {
+  display: inline-flex;
+  align-items: center;
+  background: #f4f0e5;
+  border: 1.5px solid #6f9b78;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 36px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.btn-card-step {
+  width: 32px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #355b43;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.btn-card-step:hover {
+  background: rgba(111, 155, 120, 0.25);
+}
+
+.card-qty-num {
+  min-width: 32px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #355b43;
+  padding: 0 4px;
 }
