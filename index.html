@@ -30,19 +30,69 @@
       <span class="sign-local-tag">Local 20</span>
     </div>
 
-    <!-- Menú de Vistas (Pestañas Independientes) -->
-    <nav class="nav-links">
+    <!-- Menú Desktop (Pestañas independientes) -->
+    <nav class="nav-links desktop-nav">
       <button class="nav-tab-btn active" data-page="inicio" onclick="switchPage('inicio')">🏠 Inicio</button>
       <button class="nav-tab-btn" data-page="catalogo" onclick="switchPage('catalogo')">🛍️ Catálogo</button>
       <button class="nav-tab-btn" data-page="materiales" onclick="switchPage('materiales')">🧵 Materiales</button>
       <button class="nav-tab-btn" data-page="nosotros" onclick="switchPage('nosotros')">🌿 Sobre Nosotros</button>
-      <button class="nav-tab-btn" data-page="tienda" onclick="switchPage('tienda')">📍 Tienda Física</button>
+      <button class="nav-tab-btn" data-page="tienda" onclick="switchPage('tienda')">📍 Tienda</button>
     </nav>
 
-    <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-contact-top">
-      💬 WhatsApp (+56 9 9894 6593)
-    </a>
+    <div class="nav-right-actions">
+      <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-contact-top">
+        💬 WhatsApp
+      </a>
+      <!-- Botón Hamburguesa Mobile visible en celulares -->
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú" onclick="toggleMobileDrawer()">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
   </header>
+
+  <!-- Mobile Drawer Táctil con Glassmorphism -->
+  <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop" onclick="closeMobileDrawer()">
+    <aside class="mobile-drawer-panel" onclick="event.stopPropagation()">
+      <div class="drawer-header">
+        <img src="./src/assets/logo_ecobol.png" alt="EcoBol Logo" class="drawer-logo">
+        <button class="drawer-close-btn" onclick="closeMobileDrawer()" aria-label="Cerrar">&times;</button>
+      </div>
+
+      <nav class="drawer-nav">
+        <button class="drawer-link-btn active" data-page="inicio" onclick="drawerNav('inicio')">
+          <span class="drawer-icon">🏠</span>
+          <span class="drawer-text">Inicio</span>
+        </button>
+        <button class="drawer-link-btn" data-page="catalogo" onclick="drawerNav('catalogo')">
+          <span class="drawer-icon">🛍️</span>
+          <span class="drawer-text">Catálogo Completo</span>
+          <span class="drawer-badge">198</span>
+        </button>
+        <button class="drawer-link-btn" data-page="materiales" onclick="drawerNav('materiales')">
+          <span class="drawer-icon">🧵</span>
+          <span class="drawer-text">Nuestras Telas</span>
+        </button>
+        <button class="drawer-link-btn" data-page="nosotros" onclick="drawerNav('nosotros')">
+          <span class="drawer-icon">🌿</span>
+          <span class="drawer-text">Sobre Nosotros</span>
+        </button>
+        <button class="drawer-link-btn" data-page="tienda" onclick="drawerNav('tienda')">
+          <span class="drawer-icon">📍</span>
+          <span class="drawer-text">Tienda Recoleta</span>
+        </button>
+      </nav>
+
+      <div class="drawer-footer">
+        <p class="drawer-local-info">📍 Antonia López de Bello 560, Local 20<br>Recoleta, Santiago de Chile</p>
+        <a href="https://wa.me/56998946593" target="_blank" rel="noopener" class="btn-drawer-wa">
+          💬 Contactar por WhatsApp
+        </a>
+      </div>
+    </aside>
+  </div>
+
 
   <!-- CONTENEDOR PRINCIPAL DE PÁGINAS INDEPENDIENTES (SPA) -->
   <main class="pages-wrapper">
