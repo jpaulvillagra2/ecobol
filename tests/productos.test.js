@@ -178,6 +178,20 @@ test('cotizador.js no supera 300 líneas y app.js (monolito heredado) no crece',
   assert.ok(lineas('src/app.js') <= 358, 'src/app.js solo puede achicarse (regla 21 del hub)');
 });
 
+test('.vercelignore no publica el manifiesto, specs, tests ni .md internos', () => {
+  const reglas = leer('.vercelignore')
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter((l) => l && !l.startsWith('#'));
+  for (const regla of ['/MANIFIESTO_MARCA_ECOBOL.txt', '/specs/', '/tests/', '*.md']) {
+    assert.ok(reglas.includes(regla), `falta la regla ${regla}`);
+  }
+  // Nada de lo que el sitio usa: index.html, favicons y src/ (código, estilos, datos e imágenes).
+  for (const regla of reglas) {
+    assert.doesNotMatch(regla, /^!|^\/?\*$|^\/?(index\.html|favicon|src)\b|^\*\.(html|js|css|json|png|webp|jpe?g|ico)$/, regla);
+  }
+});
+
 test('index.html carga src/cotizador.js antes que src/app.js', () => {
   const html = leer('index.html');
   const cotizador = html.indexOf('<script src="./src/cotizador.js"></script>');
