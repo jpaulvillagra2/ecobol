@@ -35,7 +35,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Posavaso Sublimable 10-X40 TAMANO: 10CM x 0.5cm PACKING: 200 unidades MATERlAL:Silicona y tela blanca MARCA Polar valor x mayor 784 + iva min",
     "precio_detalle": 840,
     "precio_mayorista": 784,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10-x40.webp"
   },
   {
@@ -763,7 +763,7 @@
     "descripcion": "C0d2049 100%algoon Papelero para automoviles 18 x 28cm 599+ iva Venta minima 20 unidades",
     "precio_detalle": 599,
     "precio_mayorista": 479,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2049.webp"
   },
   {
@@ -945,7 +945,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. 100%algodon C0d.2200 Corbata para botellas $660 + IVA Venta minimo 15 unidades",
     "precio_detalle": 2200,
     "precio_mayorista": 660,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2200.webp"
   },
   {
@@ -958,7 +958,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. 100%algolon C0d.2201 Saco para vino 75Oml $590 + IVA Venta minimo 15 unidades",
     "precio_detalle": 2201,
     "precio_mayorista": 590,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2201.webp"
   },
   {
@@ -1816,7 +1816,7 @@
     "descripcion": "Producto de temporada Barbie Bolsa 35 x 40 cm asa 75 cm + cosmetigquero 1.950 + iva Venta minima 5 unidades",
     "precio_detalle": 1950,
     "precio_mayorista": 1560,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6000.webp"
   },
   {
@@ -2024,7 +2024,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Poliester Sun Out C6d.8005 TORO DEPIEDRA VINAREQUINGUA Saco para vino 75Oml $650 + IVA Venta minimo 15 unidades",
     "precio_detalle": 8005,
     "precio_mayorista": 650,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/8005.webp"
   },
   {
@@ -2063,7 +2063,7 @@
     "descripcion": "Poliester Bolsa especial HALLOWEEN BICOLOR $ 670 +IVA Venta minima 15 unidades",
     "precio_detalle": 670,
     "precio_mayorista": 536,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/bolsa dulcera bicolor (3).webp"
   },
   {
@@ -2076,7 +2076,7 @@
     "descripcion": "Poliester Bolsa especial halloween NEGRO $ 640 +IVA Venta minima 20 unidades",
     "precio_detalle": 640,
     "precio_mayorista": 512,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/bolsa dulcera negra.webp"
   },
   {
@@ -2089,7 +2089,7 @@
     "descripcion": "100% algodon Ecologico Bolsa35 * 4O cm asa 75 cm BICOLOR $ 890 +IVA Minimo de venta 12",
     "precio_detalle": 890,
     "precio_mayorista": 712,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/bolsa navideña.webp"
   },
   {
@@ -2141,7 +2141,7 @@
     "descripcion": "PRODUCTODE TEMPORADA Poliester Bieslrech Funda 30 3O cm bicolor con cierre $750  +IVA",
     "precio_detalle": 750,
     "precio_mayorista": 600,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/funda bicolor.webp"
   },
   {
@@ -2154,7 +2154,7 @@
     "descripcion": "Biestrech Poliester PRODUCTODE TEMPORADA Con cierre Con bolsillo Funda con cierre 3O x 4O cm $1.499 +IVA Venta minima 12",
     "precio_detalle": 1499,
     "precio_mayorista": 1199,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/funda con bolsillo.webp"
   },
   {
@@ -2167,7 +2167,7 @@
     "descripcion": "algodony poliester Ecologico Funda 35 * 35 cm BICOLOR $ 1250 +IVA Minimo de venta lO",
     "precio_detalle": 1250,
     "precio_mayorista": 1000,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/funda navideña.webp"
   },
   {
@@ -2180,7 +2180,7 @@
     "descripcion": "Biestrech Poliester Algodon suelto Funda con cierre rellena de algodon siliconado 30 x 30 cm. $1.899 +IVA Venta minima 12",
     "precio_detalle": 1899,
     "precio_mayorista": 1519,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/funda rellena.webp"
   },
   {
@@ -2206,7 +2206,7 @@
     "descripcion": "Poliester PRODUCTO ESPECIAL Pechera hombre (tres bolsillos) $ 3990 + IVA Venta minimo 6 unidades",
     "precio_detalle": 3990,
     "precio_mayorista": 3192,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/pechera azul.webp"
   },
   {
@@ -2219,7 +2219,7 @@
     "descripcion": "Poliester PRODUCTO ESPECIAL Pechera hombre (tres bolsillos) $ 3990 + IVA Venta minimo 6 unidades",
     "precio_detalle": 3990,
     "precio_mayorista": 3192,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/pehera azul.webp"
   },
   {
@@ -2245,7 +2245,7 @@
     "descripcion": "romo # 4  * 4O cm + monedero Bolsa 35 $1599+ IVA lona Natural",
     "precio_detalle": 1599,
     "precio_mayorista": 1279,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo 3 (2).webp"
   },
   {
@@ -2258,7 +2258,7 @@
     "descripcion": "nomo#5 lona Natural * 40 cm + estampado full Bolsa 35 color $1500 + IVA",
     "precio_detalle": 1500,
     "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo 3 (3).webp"
   },
   {
@@ -2284,7 +2284,7 @@
     "descripcion": "Poliester nomo #6 Bieserech Bolsa 35 X4O cm + estuche escolar $1.400 + IVA",
     "precio_detalle": 1400,
     "precio_mayorista": 1120,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/PROMO 6.webp"
   },
   {
@@ -2297,7 +2297,7 @@
     "descripcion": "alaodon Suktmable S * 40 cm + cosmetiquero Bolsa 35 Lona ntural c/forro $2.650+ IVA",
     "precio_detalle": 2650,
     "precio_mayorista": 2120,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo algodon sublimable.webp"
   },
   {
@@ -2310,7 +2310,7 @@
     "descripcion": "Poliester biestrech Bolsa 35 x 4O cm asa 75 cm BLANCO + cosmetiquero c/forro BLANCO 2100+ iva",
     "precio_detalle": 2100,
     "precio_mayorista": 1680,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo biestrech.webp"
   },
   {
@@ -2414,7 +2414,7 @@
     "descripcion": "nomo#2 ugpobyo%0ol Bolsa 35 * 40 cm Crea Cruda + cosmetiguero Crea Cruda $1.700+ IVA",
     "precio_detalle": 1700,
     "precio_mayorista": 1360,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (8).webp"
   },
   {
@@ -2479,7 +2479,7 @@
     "descripcion": "Biestrech Poliesten PRODUCTO ESPECIAL Set bolsa 35 x 40 cm + Cosmetigquero 26 x 17 cm $1.990 +IVA Venta minima 12",
     "precio_detalle": 1990,
     "precio_mayorista": 1592,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo negro (2).webp"
   },
   {
@@ -2505,7 +2505,7 @@
     "descripcion": "100% algodon Ecologico Saquitos 20 25 cm $ 510 +IVA producto de temporada",
     "precio_detalle": 510,
     "precio_mayorista": 408,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/saco 20 x 25 navideño.webp"
   },
   {
@@ -2516,9 +2516,9 @@
     "material": "Algodón / Crea Cruda",
     "medidas": "10  * 15 cm",
     "descripcion": "100% algodon Ecologico Saquitos 10  * 15 cm $ 430+IVA Minimo de venta 24",
-    "precio_detalle": 1500,
-    "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "precio_detalle": null,
+    "precio_mayorista": null,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/saco navideño 10 x 15.webp"
   },
   {
@@ -2529,9 +2529,9 @@
     "material": "Algodón / Crea Cruda",
     "medidas": "15 * 20 cm",
     "descripcion": "100%algodon Ecologico Saquitos 15 * 20 cm $ 490+IVA Minimo de venta 20",
-    "precio_detalle": 1500,
-    "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "precio_detalle": null,
+    "precio_mayorista": null,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/saco navideño 15 x 20.webp"
   },
   {
@@ -2544,7 +2544,7 @@
     "descripcion": "100%algodon Ecologico Saquitos 20  *25 cm $ 530 +IVA Minimo de venta 20",
     "precio_detalle": 530,
     "precio_mayorista": 424,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/saco navideño 20 x 25.webp"
   },
   {

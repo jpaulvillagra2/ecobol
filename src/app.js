@@ -1,5 +1,6 @@
 // ==========================================================================
 // ECOBOL SpA - CATÁLOGO TEXTIL ATÓMICO MOBILE-FIRST (TOOLBAR COMPACTA & COTIZADOR CONDICIONAL)
+// Precios, cantidades, totales y mensaje de WhatsApp: src/cotizador.js (se carga antes).
 // ==========================================================================
 
 const WHATSAPP_PHONE = '56998946593';
@@ -9,14 +10,6 @@ let filteredProducts = [];
 let currentCategory = 'all';
 let cart = {};
 let selectedProductForModal = null;
-
-const formatCLP = (amount) => {
-  return new Intl.NumberFormat('es-CL', {
-    style: 'currency',
-    currency: 'CLP',
-    maximumFractionDigits: 0
-  }).format(amount || 0);
-};
 
 // Navegación Multi-Página SPA
 window.switchPage = function(pageId) {
@@ -55,7 +48,8 @@ window.drawerNav = function(pageId) {
 async function init() {
   try {
     const res = await fetch('./src/data/products.json');
-    allProducts = await res.json();
+    // products.json repite algunos id: cada producto recibe un uid único (p0, p1...).
+    allProducts = Cotizador.asignarIdsUnicos(await res.json());
     filteredProducts = [...allProducts];
 
     populateCategoryDropdown();
@@ -157,11 +151,11 @@ function renderCatalog() {
   }
 
   grid.innerHTML = filteredProducts.map(prod => {
-    const inCart = cart[prod.id] ? cart[prod.id].qty : 0;
+    const inCart = cart[prod.uid] ? cart[prod.uid].qty : 0;
     const imgSrc = prod.imagen || './src/assets/logo_ecobol.png';
 
     return `
-      <article class="product-card" id="card-${prod.id}" onclick="openProductModal('${prod.id}')">
+      <article class="product-card" id="card-${prod.uid}" onclick="openProductModal('${prod.uid}')">
         <div class="product-image-container">
           <img src="${imgSrc}" alt="${prod.nombre}" class="product-img" loading="lazy" onerror="this.src='./src/assets/logo_ecobol.png'">
           <span class="product-badge-cat">${prod.categoria}</span>
@@ -176,20 +170,20 @@ function renderCatalog() {
           <div class="product-footer" onclick="event.stopPropagation()">
             <div class="price-box">
               <span class="price-label">Detalle (1 un.)</span>
-              <span class="price-val">${formatCLP(prod.precio_detalle)}</span>
-              <span class="price-iva">Mayor: ${formatCLP(prod.precio_mayorista)}</span>
+              <span class="price-val">${Cotizador.textoPrecio(prod, 'detalle')}</span>
+              <span class="price-iva">Mayor: ${Cotizador.textoPrecio(prod, 'mayorista')}</span>
             </div>
-            
+
             <div class="card-actions">
               ${inCart === 0 ? `
-                <button class="btn-card-add" onclick="addToCart('${prod.id}')">
+                <button class="btn-card-add" onclick="addToCart('${prod.uid}')">
                   🛒 + Cotizar
                 </button>
               ` : `
                 <div class="card-stepper">
-                  <button type="button" class="btn-card-step" onclick="updateQty('${prod.id}', -1)">-</button>
+                  <button type="button" class="btn-card-step" onclick="updateQty('${prod.uid}', -1)">-</button>
                   <span class="card-qty-num">${inCart}</span>
-                  <button type="button" class="btn-card-step" onclick="updateQty('${prod.id}', 1)">+</button>
+                  <button type="button" class="btn-card-step" onclick="updateQty('${prod.uid}', 1)">+</button>
                 </div>
               `}
             </div>
@@ -201,40 +195,32 @@ function renderCatalog() {
 }
 
 // Modal de Detalle de Producto
-window.openProductModal = function(productId) {
-  const prod = allProducts.find(p => p.id === productId);
+window.openProductModal = function(uid) {
+  const prod = allProducts.find(p => p.uid === uid);
   if (!prod) return;
 
   selectedProductForModal = prod;
 
   document.getElementById('modal-product-img').src = prod.imagen || './src/assets/logo_ecobol.png';
   document.getElementById('modal-product-badge').innerText = prod.categoria;
-  document.getElementById('modal-product-sku').innerText = 'SKU OFICIAL: ' + (prod.sku || prod.id);
+  document.getElementById('modal-product-sku').innerText = 'SKU OFICIAL: ' + Cotizador.skuDe(prod);
   document.getElementById('modal-product-title').innerText = prod.nombre;
   document.getElementById('modal-product-medidas').innerText = '📐 ' + prod.medidas;
   document.getElementById('modal-product-material').innerText = '🧵 ' + prod.material;
-  document.getElementById('modal-product-price-det').innerText = formatCLP(prod.precio_detalle);
-  document.getElementById('modal-product-price-may').innerText = formatCLP(prod.precio_mayorista);
+  document.getElementById('modal-product-price-det').innerText = Cotizador.textoPrecio(prod, 'detalle');
+  document.getElementById('modal-product-price-may').innerText = Cotizador.textoPrecio(prod, 'mayorista');
 
   const descEl = document.getElementById('modal-product-desc');
   if (descEl) {
-    let cleanDesc = prod.descripcion || '';
-    const parts = cleanDesc.split(/[.|]/).map(s => s.trim()).filter(s => s.length > 2);
-    if (parts.length > 1) {
-      descEl.innerHTML = parts.map(p => `<p class="desc-bullet">• ${p}</p>`).join('');
-    } else {
-      descEl.innerHTML = `<p>${cleanDesc}</p>`;
-    }
+    const parts = Cotizador.partesDescripcion(prod.descripcion);
+    descEl.innerHTML = parts.length > 1
+      ? parts.map(p => `<p class="desc-bullet">• ${p}</p>`).join('')
+      : `<p>${parts.join('')}</p>`;
   }
 
-  const currentInCart = cart[prod.id] ? cart[prod.id].qty : 1;
   const qtyInput = document.getElementById('modal-qty-input');
-  if (qtyInput) qtyInput.value = currentInCart;
-
-  const addBtn = document.getElementById('modal-add-btn');
-  if (addBtn) {
-    addBtn.innerText = `🛒 Añadir a Cotización (${qtyInput ? qtyInput.value : 1} un.)`;
-  }
+  if (qtyInput) qtyInput.value = cart[prod.uid] ? cart[prod.uid].qty : 1;
+  setModalAddLabel(qtyInput ? qtyInput.value : 1);
 
   const modal = document.getElementById('product-modal');
   if (modal) modal.style.display = 'flex';
@@ -245,32 +231,33 @@ window.closeProductModal = function() {
   if (modal) modal.style.display = 'none';
 };
 
+function setModalAddLabel(qty) {
+  const addBtn = document.getElementById('modal-add-btn');
+  if (addBtn) addBtn.innerText = `🛒 Añadir a Cotización (${qty} un.)`;
+}
+
+// Cantidad del modal: siempre un entero entre 1 y 5.000 (ej.: "-5" -> 1, "99999" -> 5.000).
 window.changeModalQty = function(delta) {
   const input = document.getElementById('modal-qty-input');
   if (!input) return;
-  let val = parseInt(input.value) || 1;
-  val = Math.max(1, val + delta);
-  input.value = val;
-
-  const addBtn = document.getElementById('modal-add-btn');
-  if (addBtn) addBtn.innerText = `🛒 Añadir a Cotización (${val} un.)`;
+  input.value = Cotizador.normalizarCantidad(Cotizador.normalizarCantidad(input.value) + delta);
+  setModalAddLabel(input.value);
 };
 
 window.setModalQty = function(qty) {
   const input = document.getElementById('modal-qty-input');
   if (!input) return;
-  input.value = qty;
-
-  const addBtn = document.getElementById('modal-add-btn');
-  if (addBtn) addBtn.innerText = `🛒 Añadir a Cotización (${qty} un.)`;
+  input.value = Cotizador.normalizarCantidad(qty);
+  setModalAddLabel(input.value);
 };
 
 window.addModalProductToCart = function() {
   if (!selectedProductForModal) return;
   const input = document.getElementById('modal-qty-input');
-  const qty = input ? (parseInt(input.value) || 1) : 1;
+  const qty = Cotizador.normalizarCantidad(input ? input.value : 1);
+  if (input) input.value = qty;
 
-  cart[selectedProductForModal.id] = { product: selectedProductForModal, qty: qty };
+  cart[selectedProductForModal.uid] = { product: selectedProductForModal, qty: qty };
 
   updateStickyBar();
   renderCatalog();
@@ -282,81 +269,59 @@ window.addModalProductToCart = function() {
   }
 };
 
-window.addToCart = function(productId) {
-  const prod = allProducts.find(p => p.id === productId);
+window.addToCart = function(uid) {
+  const prod = allProducts.find(p => p.uid === uid);
   if (!prod) return;
 
-  if (!cart[productId]) {
-    cart[productId] = { product: prod, qty: 1 };
-  } else {
-    cart[productId].qty += 1;
-  }
+  const actual = cart[uid] ? cart[uid].qty : 0;
+  cart[uid] = { product: prod, qty: Cotizador.normalizarCantidad(actual + 1) };
 
   updateStickyBar();
   renderCatalog();
 };
 
-window.updateQty = function(productId, delta) {
-  if (!cart[productId]) return;
+window.updateQty = function(uid, delta) {
+  if (!cart[uid]) return;
 
-  cart[productId].qty += delta;
-  if (cart[productId].qty <= 0) {
-    delete cart[productId];
-  }
+  // Bajo 1 el artículo sale de la cotización; sobre 5.000 queda en 5.000.
+  const nueva = cart[uid].qty + delta;
+  if (nueva < Cotizador.CANTIDAD_MINIMA) delete cart[uid];
+  else cart[uid].qty = Cotizador.normalizarCantidad(nueva);
 
   updateStickyBar();
   renderCatalog();
 };
 
 // GESTIÓN DETERMINISTA DE LA BARRA STICKY INFERIOR:
-// SOLO APARECE SI TOTALITEMS > 0. EN VACÍO QUEDA 100% OCULTA.
+// SOLO APARECE SI HAY ARTÍCULOS (CADA CANTIDAD ENTRE 1 Y 5.000). EN VACÍO QUEDA 100% OCULTA.
+// Los artículos sin precio válido no suman: el total dice "Desde $X" o "Por confirmar".
 function updateStickyBar() {
   const bar = document.getElementById('sticky-quote-bar');
-  const countSpan = document.getElementById('cart-items-count');
-  const totalSpan = document.getElementById('cart-total-amount');
-  const waBtn = document.getElementById('whatsapp-quote-btn');
-
-  const items = Object.values(cart);
-  const totalItems = items.reduce((sum, item) => sum + item.qty, 0);
-
   if (!bar) return;
 
-  if (totalItems <= 0) {
-    // 100% OCULTO EN ESTADO VACÍO
+  const cotizacion = Cotizador.calcularCotizacion(
+    Object.values(cart).map(item => ({ producto: item.product, cantidad: item.qty }))
+  );
+
+  if (cotizacion.totalUnidades <= 0) {
     bar.style.display = 'none';
     bar.classList.remove('visible');
     return;
   }
 
-  // Si hay al menos 1 producto: mostrar barra animada
   bar.style.display = 'flex';
   bar.classList.add('visible');
 
-  const isWholesale = totalItems >= 12;
-  const totalPrice = items.reduce((sum, item) => {
-    const p = isWholesale ? (item.product.precio_mayorista || item.product.precio_detalle) : item.product.precio_detalle;
-    return sum + (p * item.qty);
-  }, 0);
-
+  const countSpan = document.getElementById('cart-items-count');
+  const totalSpan = document.getElementById('cart-total-amount');
+  const waBtn = document.getElementById('whatsapp-quote-btn');
   if (countSpan) {
-    countSpan.innerText = `${totalItems} un. ${isWholesale ? '⭐ Tarifa Mayorista' : ''}`;
+    const mayorista = cotizacion.tarifa === 'mayorista' ? ' ⭐ Tarifa Mayorista' : '';
+    const pendientes = cotizacion.porConfirmar ? ` · ${cotizacion.porConfirmar} por confirmar` : '';
+    countSpan.innerText = `${cotizacion.totalUnidades} un.${mayorista}${pendientes}`;
   }
-  if (totalSpan) {
-    totalSpan.innerText = formatCLP(totalPrice);
-  }
-
-  if (waBtn) {
-    let message = `¡Hola EcoBol SpA! Deseo solicitar cotización para los siguientes artículos:\n\n`;
-    items.forEach(item => {
-      const unitPrice = isWholesale ? (item.product.precio_mayorista || item.product.precio_detalle) : item.product.precio_detalle;
-      message += `• ${item.qty}x ${item.product.nombre} (SKU: ${item.product.sku || item.product.id}) - ${formatCLP(unitPrice * item.qty)}\n`;
-    });
-    message += `\n📦 Total artículos: ${totalItems} un.`;
-    message += `\n💰 Total estimado: ${formatCLP(totalPrice)} (IVA incluido ${isWholesale ? '- Tarifa Mayorista' : ''})`;
-    message += `\n\n¿Tienen disponibilidad y tiempos de confección/entrega?`;
-
-    waBtn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
-  }
+  if (totalSpan) totalSpan.innerText = Cotizador.textoTotalBarra(cotizacion);
+  if (waBtn) waBtn.href = Cotizador.enlaceWhatsApp(WHATSAPP_PHONE, Cotizador.construirMensaje(cotizacion));
 }
 
 function setupEventListeners() {
@@ -377,11 +342,9 @@ function setupEventListeners() {
 
   const qtyInput = document.getElementById('modal-qty-input');
   if (qtyInput) {
-    qtyInput.addEventListener('input', () => {
-      const val = parseInt(qtyInput.value) || 1;
-      const addBtn = document.getElementById('modal-add-btn');
-      if (addBtn) addBtn.innerText = `🛒 Añadir a Cotización (${val} un.)`;
-    });
+    qtyInput.addEventListener('input', () => setModalAddLabel(Cotizador.normalizarCantidad(qtyInput.value)));
+    // Al salir del campo, lo escrito queda corregido al rango 1 a 5.000.
+    qtyInput.addEventListener('change', () => window.setModalQty(qtyInput.value));
   }
 
   document.addEventListener('keydown', (e) => {

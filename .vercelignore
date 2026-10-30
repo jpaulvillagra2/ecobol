@@ -1,0 +1,6 @@
+# Archivos internos del repo que no se publican en Vercel (el sitio no los usa).
+# Misma sintaxis que .gitignore; "/" al inicio = solo en la raíz.
+/MANIFIESTO_MARCA_ECOBOL.txt
+/specs/
+/tests/
+*.md
