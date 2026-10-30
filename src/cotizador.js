@@ -99,6 +99,19 @@ const Cotizador = (() => {
     return { neto, iva: total - neto, total };
   }
 
+  // Descripción del modal en viñetas. Se omite la plantilla vacía del generador del JSON
+  // ("Escala por volumen: | | . IVA incluido."): no trae datos y afirma un IVA sin respaldo.
+  const PLANTILLA_VACIA = /^\s*Escala por volumen:[\s|]*\.\s*IVA incluido\.\s*/i;
+
+  function partesDescripcion(texto) {
+    if (typeof texto !== 'string') return [];
+    return texto
+      .replace(PLANTILLA_VACIA, '')
+      .split(/[.|]/)
+      .map((parte) => parte.trim())
+      .filter((parte) => parte.length > 2);
+  }
+
   // items: [{ producto, cantidad }]. La tarifa mayorista rige desde 12 unidades en total.
   function calcularCotizacion(items) {
     const lineas = (Array.isArray(items) ? items : [])
@@ -169,6 +182,7 @@ const Cotizador = (() => {
     textoPrecio,
     normalizarCantidad,
     asignarIdsUnicos,
+    partesDescripcion,
     calcularCotizacion,
     construirMensaje,
     textoTotalBarra,

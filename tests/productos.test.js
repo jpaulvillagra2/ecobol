@@ -168,6 +168,29 @@ test('IVA 19% según el campo iva_incluido: neto + IVA = total, sin inventar IVA
   assert.equal(c.origenIva, 'sin_dato');
 });
 
+test('una descripción que dice "+ IVA" no trae iva_incluido: true', (t) => {
+  const masIva = productos.filter((p) => /\+\s*iva/i.test(p.descripcion || ''));
+  for (const p of masIva) assert.notEqual(p.iva_incluido, true, `SKU ${p.sku}: la descripción dice "+ IVA"`);
+  t.diagnostic(`descripciones con "+ IVA": ${masIva.length}`);
+});
+
+test('el modal no afirma "IVA incluido": dice "Precio publicado" y omite la plantilla vacía', () => {
+  const html = leer('index.html');
+  assert.doesNotMatch(html, /iva incluido/i);
+  assert.match(html, /<span class="modal-iva-tag">Precio publicado<\/span>/);
+  for (const p of productos) {
+    for (const parte of Cotizador.partesDescripcion(p.descripcion)) {
+      assert.doesNotMatch(parte, /iva incluido|^escala por volumen/i, `SKU ${p.sku}: "${parte}"`);
+    }
+  }
+  assert.deepEqual(
+    Cotizador.partesDescripcion('Escala por volumen:  |  | . IVA incluido. Bolsa 30 x 35 cm. Asa 75 cm'),
+    ['Bolsa 30 x 35 cm', 'Asa 75 cm']
+  );
+  assert.deepEqual(Cotizador.partesDescripcion('Pechera $ 3990 + IVA. Venta mínimo 6'), ['Pechera $ 3990 + IVA', 'Venta mínimo 6']);
+  assert.deepEqual(Cotizador.partesDescripcion(null), []);
+});
+
 test('mensaje de WhatsApp: neto, IVA 19% y total por separado; "precio por confirmar" no suma', () => {
   const c = cotizar(
     [producto({ sku: '2002B' }), 2],
@@ -204,7 +227,7 @@ test('app.js no lee precios del JSON: todo precio pasa por src/cotizador.js', ()
 test('cotizador.js no supera 300 líneas y app.js (monolito heredado) no crece', () => {
   const lineas = (ruta) => leer(ruta).trimEnd().split('\n').length;
   assert.ok(lineas('src/cotizador.js') <= 300, 'src/cotizador.js supera 300 líneas');
-  assert.ok(lineas('src/app.js') <= 358, 'src/app.js solo puede achicarse (regla 21 del hub)');
+  assert.ok(lineas('src/app.js') <= 355, 'src/app.js solo puede achicarse (regla 21 del hub)');
 });
 
 test('.vercelignore no publica el manifiesto, specs, tests ni .md internos', () => {

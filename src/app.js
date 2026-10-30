@@ -212,13 +212,10 @@ window.openProductModal = function(uid) {
 
   const descEl = document.getElementById('modal-product-desc');
   if (descEl) {
-    let cleanDesc = prod.descripcion || '';
-    const parts = cleanDesc.split(/[.|]/).map(s => s.trim()).filter(s => s.length > 2);
-    if (parts.length > 1) {
-      descEl.innerHTML = parts.map(p => `<p class="desc-bullet">• ${p}</p>`).join('');
-    } else {
-      descEl.innerHTML = `<p>${cleanDesc}</p>`;
-    }
+    const parts = Cotizador.partesDescripcion(prod.descripcion);
+    descEl.innerHTML = parts.length > 1
+      ? parts.map(p => `<p class="desc-bullet">• ${p}</p>`).join('')
+      : `<p>${parts.join('')}</p>`;
   }
 
   const qtyInput = document.getElementById('modal-qty-input');
