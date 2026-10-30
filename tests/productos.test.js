@@ -168,6 +168,21 @@ test('IVA 19% según el campo iva_incluido: neto + IVA = total, sin inventar IVA
   assert.equal(c.origenIva, 'sin_dato');
 });
 
+test('sacos navideños 10x15 y 15x20 sin precio hasta la lista real (su descripción dice $430 y $490 + IVA)', () => {
+  for (const id of ['saco navideño 10 x 15', 'saco navideño 15 x 20']) {
+    const p = productos.find((x) => x.id === id);
+    assert.ok(p, id);
+    assert.equal(p.precio_detalle, null, `${id}: precio_detalle null hasta la lista real de JP (D2)`);
+    assert.equal(p.precio_mayorista, null, `${id}: precio_mayorista null hasta la lista real de JP (D2)`);
+    for (const tarifa of ['detalle', 'mayorista']) {
+      assert.equal(Cotizador.textoPrecio(p, tarifa), Cotizador.TEXTO_SIN_PRECIO, `${id} (${tarifa})`);
+    }
+    const c = cotizar([p, 24], [producto({}), 1]);
+    assert.equal(c.porConfirmar, 1, id);
+    assert.equal(c.publicado, 1000, `${id}: solo suma el producto con precio (mayorista $1.000)`);
+  }
+});
+
 test('una descripción que dice "+ IVA" no trae iva_incluido: true', (t) => {
   const masIva = productos.filter((p) => /\+\s*iva/i.test(p.descripcion || ''));
   for (const p of masIva) assert.notEqual(p.iva_incluido, true, `SKU ${p.sku}: la descripción dice "+ IVA"`);

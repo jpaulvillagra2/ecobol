@@ -2516,8 +2516,8 @@
     "material": "Algodón / Crea Cruda",
     "medidas": "10  * 15 cm",
     "descripcion": "100% algodon Ecologico Saquitos 10  * 15 cm $ 430+IVA Minimo de venta 24",
-    "precio_detalle": 1500,
-    "precio_mayorista": 1200,
+    "precio_detalle": null,
+    "precio_mayorista": null,
     "iva_incluido": false,
     "imagen": "./src/assets/products_opt/saco navideño 10 x 15.webp"
   },
@@ -2529,8 +2529,8 @@
     "material": "Algodón / Crea Cruda",
     "medidas": "15 * 20 cm",
     "descripcion": "100%algodon Ecologico Saquitos 15 * 20 cm $ 490+IVA Minimo de venta 20",
-    "precio_detalle": 1500,
-    "precio_mayorista": 1200,
+    "precio_detalle": null,
+    "precio_mayorista": null,
     "iva_incluido": false,
     "imagen": "./src/assets/products_opt/saco navideño 15 x 20.webp"
   },
