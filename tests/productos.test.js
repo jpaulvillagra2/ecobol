@@ -41,7 +41,7 @@ test('un precio igual al SKU, ausente o inválido se muestra "Consultar precio"'
   const sinPrecio = Cotizador.TEXTO_SIN_PRECIO;
   assert.equal(sinPrecio, 'Consultar precio');
   assert.equal(Cotizador.textoPrecio(producto({ sku: '1117', precio_detalle: 1117 }), 'detalle'), sinPrecio);
-  assert.equal(Cotizador.textoPrecio(producto({ sku: '1117', precio_detalle: 1117 }), 'mayorista'), '$1.000');
+  assert.equal(Cotizador.textoPrecio(producto({ sku: '1117', precio_detalle: 1117 }), 'mayorista'), sinPrecio);
   assert.equal(Cotizador.textoPrecio(producto({ sku: '10-X40', precio_detalle: 1040 }), 'detalle'), sinPrecio);
   assert.equal(Cotizador.textoPrecio(producto({ sku: '01117', precio_detalle: 1117 }), 'detalle'), sinPrecio);
   assert.equal(Cotizador.textoPrecio(producto({ sku: '', id: '2004', precio_detalle: 2004 }), 'detalle'), sinPrecio);
@@ -52,6 +52,33 @@ test('un precio igual al SKU, ausente o inválido se muestra "Consultar precio"'
   assert.equal(Cotizador.textoPrecio(producto({ sku: 'bolsa navideña', precio_detalle: 890 }), 'detalle'), '$890');
   assert.equal(Cotizador.textoPrecio(null, 'detalle'), sinPrecio);
   assert.equal(Cotizador.textoPrecio(producto({}), 'otra'), sinPrecio);
+});
+
+test('un detalle igual al SKU oculta también su mayorista (se calculó desde ese número)', (t) => {
+  const esSku = (p, campo) => digitos(p.sku || p.id) !== '' && digitos(p[campo]) === digitos(p.sku || p.id);
+  const afectados = productos.filter((p) => esSku(p, 'precio_detalle'));
+  for (const p of afectados) {
+    assert.equal(Cotizador.textoPrecio(p, 'mayorista'), Cotizador.TEXTO_SIN_PRECIO, `SKU ${p.sku}: mayorista ${p.precio_mayorista}`);
+    assert.equal(cotizar([p, 12]).porConfirmar, 1, `SKU ${p.sku} con tarifa mayorista`);
+  }
+  // Caso del catálogo: SKU 1117 con detalle $1.117 y mayorista $894 (el 80% del SKU).
+  const caja = producto({ sku: '1117', precio_detalle: 1117, precio_mayorista: 894 });
+  assert.equal(Cotizador.textoPrecio(caja, 'mayorista'), Cotizador.TEXTO_SIN_PRECIO);
+  // Al revés no: un mayorista igual al SKU no invalida un detalle distinto del SKU.
+  const soloMayorista = producto({ sku: '1000', precio_detalle: 2319, precio_mayorista: 1000 });
+  assert.equal(Cotizador.textoPrecio(soloMayorista, 'detalle'), '$2.319');
+  assert.equal(Cotizador.textoPrecio(soloMayorista, 'mayorista'), Cotizador.TEXTO_SIN_PRECIO);
+  t.diagnostic(`productos con detalle = SKU (sin precio en ninguna tarifa): ${afectados.length}`);
+});
+
+test('tope: productos con precio igual a su SKU en products.json (solo puede bajar)', (t) => {
+  const igualesAlSku = (campo) =>
+    productos.filter((p) => digitos(p.sku || p.id) !== '' && digitos(p[campo]) === digitos(p.sku || p.id)).length;
+  const detalle = igualesAlSku('precio_detalle');
+  const mayorista = igualesAlSku('precio_mayorista');
+  t.diagnostic(`precio = SKU en los datos: ${detalle} en detalle (tope 110), ${mayorista} en mayorista (tope 19)`);
+  assert.ok(detalle <= 110, `${detalle} productos con precio detalle igual al SKU: el tope es 110 y solo puede bajar`);
+  assert.ok(mayorista <= 19, `${mayorista} productos con precio mayorista igual al SKU: el tope es 19 y solo puede bajar`);
 });
 
 test('cantidad entera entre 1 y 5.000 (bordes y entradas inválidas)', () => {
@@ -99,11 +126,13 @@ test('el total suma solo precios válidos; tarifa mayorista desde 12 unidades', 
   assert.equal(c.porConfirmar, 1);
   assert.equal(c.lineas[1].subtotal, null);
 
+  // Con 12 unidades rige el mayorista, pero el $894 de 1117 salió del SKU (80%): sigue por confirmar.
   assert.equal(cotizar([valido, 11]).tarifa, 'detalle');
   c = cotizar([valido, 11], [skuComoPrecio, 1]);
   assert.equal(c.tarifa, 'mayorista');
-  assert.equal(c.publicado, 11 * 1000 + 894);
-  assert.equal(c.porConfirmar, 0);
+  assert.equal(c.publicado, 11 * 1000);
+  assert.equal(c.porConfirmar, 1);
+  assert.equal(c.lineas[1].subtotal, null);
 
   // Un mayorista igual al SKU no cae al precio detalle: queda por confirmar.
   c = cotizar([producto({ sku: '1000', precio_detalle: 2319, precio_mayorista: 1000 }), 12]);

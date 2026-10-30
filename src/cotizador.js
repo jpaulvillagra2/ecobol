@@ -42,10 +42,18 @@ const Cotizador = (() => {
     return digitosSku === '' || soloDigitos(precio) !== digitosSku;
   }
 
+  // Si el precio detalle es el SKU, el mayorista se calculó desde ese mismo número (SKU 1117 -> $894,
+  // el 80%; 2064 y 3017 al 75%): tampoco es un precio y el producto queda sin precio en ambas tarifas.
+  // Al revés no: un mayorista igual al SKU no invalida un detalle distinto.
+  function detalleEsSku(producto) {
+    const digitosSku = soloDigitos(skuDe(producto));
+    return digitosSku !== '' && soloDigitos(producto.precio_detalle) === digitosSku;
+  }
+
   // Precio unitario de la tarifa ('detalle' o 'mayorista'), o null si no hay un precio válido.
   function precioDe(producto, tarifa) {
     const campo = CAMPO_PRECIO[tarifa];
-    if (!producto || typeof producto !== 'object' || !campo) return null;
+    if (!producto || typeof producto !== 'object' || !campo || detalleEsSku(producto)) return null;
     return esPrecioValido(producto[campo], skuDe(producto)) ? producto[campo] : null;
   }
 
