@@ -265,3 +265,9 @@ test('index.html carga src/cotizador.js antes que src/app.js', () => {
   const app = html.indexOf('<script src="./src/app.js"></script>');
   assert.ok(cotizador > -1 && app > -1 && cotizador < app);
 });
+
+// JP confirmó el 2026-10-30 que todo el catálogo de Ecobol es neto (+ IVA): la cotización suma el 19%.
+test('todo el catálogo es neto: ningún producto trae iva_incluido true', () => {
+  const conIva = productos.filter((p) => p.iva_incluido !== false).map((p) => p.sku);
+  assert.deepEqual(conIva, [], `productos que no son netos: ${conIva.join(', ')}`);
+});

@@ -9,7 +9,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Tazon Sublimacion 10-99333 Bicolor Ln caja  individual blanca TAMANO: 82CM x 9.5cm CAPACIDAD 350ml PACKING: caja o unidades",
     "precio_detalle": 1932,
     "precio_mayorista": 1794,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10-99333.webp"
   },
   {
@@ -22,7 +22,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Tazon Sublimacion 10-99444 Bicolor con cuchara Ln  caja  individual blanca TAMANO: 8 2CM x 10.3cm CAPACIDAD 320ml PACKING: caja o unidades",
     "precio_detalle": 2492,
     "precio_mayorista": 2314,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10-99444.webp"
   },
   {
@@ -48,7 +48,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 34 x 39 cm algodon Cod 1000 Sublimable JHOYONS OMESALGO! ALGODON SUBLIMACIN DIRECTA",
     "precio_detalle": 2319,
     "precio_mayorista": 1000,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1000.webp"
   },
   {
@@ -61,7 +61,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 30 x 35  cm algodon Cod 1001 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS",
     "precio_detalle": 2010,
     "precio_mayorista": 1001,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1001.webp"
   },
   {
@@ -74,7 +74,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 40 x 45 cm algodon Cod 1002 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS PAPELES ESPECIALES",
     "precio_detalle": 2664,
     "precio_mayorista": 1002,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1002.webp"
   },
   {
@@ -87,7 +87,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 34 x 40 cm algodon Cod 1003 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS PAPELES ESPECIALES",
     "precio_detalle": 2522,
     "precio_mayorista": 1003,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1003.webp"
   },
   {
@@ -100,7 +100,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. saco 10 x 15 cm algodon Cod 1004 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS PAPELES ESPECIALES",
     "precio_detalle": 1105,
     "precio_mayorista": 850,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1004.webp"
   },
   {
@@ -113,7 +113,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. saco 15 x 20 cm algodon Cod 1005 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS PAPELES ESPECIALES",
     "precio_detalle": 1298,
     "precio_mayorista": 998,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1005.webp"
   },
   {
@@ -126,7 +126,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. sac0 20 x25 cm algodon Cod 1006 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS",
     "precio_detalle": 1558,
     "precio_mayorista": 1006,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1006.webp"
   },
   {
@@ -139,7 +139,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. sac0 25 x 30 cm algodon Cod 1007 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS PAPELES ESPECIALES",
     "precio_detalle": 1702,
     "precio_mayorista": 1007,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1007.webp"
   },
   {
@@ -152,7 +152,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. sac0 30 x 35 cm algodon Cod 1008 Sublimable ALGODON SUBLIMACIN DIRECTA NO NECESITAS",
     "precio_detalle": 1818,
     "precio_mayorista": 1008,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1008.webp"
   },
   {
@@ -165,7 +165,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. c0d 1010 ALGODON SUBLIMACIN DIRECTA NO NECESITAS PAPELES ESPECIALES 200 GRAD0S 60 SEGUND0S Naellad PROSPEROANO NUEVO",
     "precio_detalle": 1833,
     "precio_mayorista": 1010,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1010.webp"
   },
   {
@@ -178,7 +178,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 47  cm fondo de 16cm X: 39 algodon Cod 1011 ALGODON Sublimable",
     "precio_detalle": 3420,
     "precio_mayorista": 1011,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1011.webp"
   },
   {
@@ -191,7 +191,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 47 x 46 cm algodon Cod 1013 Sublimable Fuelle 8 cm ALGODON SUBLIMACION",
     "precio_detalle": 4420,
     "precio_mayorista": 1013,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1013.webp"
   },
   {
@@ -204,7 +204,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. COSMETIQUERO 24 X 15 CM FONDO PLANO algodon Cod 1014 Venta especial Sublimable ALGODON QUE ADMITE LA SUBLIMACION CON TERMINACION OPACA ",
     "precio_detalle": 2015,
     "precio_mayorista": 1014,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1014.webp"
   },
   {
@@ -217,7 +217,7 @@
     "descripcion": "Tazon Sublimacion 10-99223 TAMANO:8 2CM x9.5cm CAPACIDAD:350 ml MATLRlAL.Ceramiea valor x mayor 1000",
     "precio_detalle": 1000,
     "precio_mayorista": 800,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1099223.webp"
   },
   {
@@ -230,7 +230,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Botella Vidrio 10M28 Botella de vidrio con tapa metalica y cita de mano color gris + funda color blanco empaque en. caja individual",
     "precio_detalle": 2094,
     "precio_mayorista": 500,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m28.webp"
   },
   {
@@ -243,7 +243,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Botella Sublimacion 10M47 Encajaindividual blanca TAMANO: 6.5 CM x 22.5cm CAPACIDAD 650 ml PACKlNC caja 60 unidades MATERIAL: Aluminio",
     "precio_detalle": 3825,
     "precio_mayorista": 650,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m47.webp"
   },
   {
@@ -256,7 +256,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Botella Sublimacion 10M49 Ln caja  individual blanca TAMANO: 72 CM x 244cm CAPACIDAD 600ml PACKlNC caja 60 unidades MATERIAL: Aluminio",
     "precio_detalle": 3525,
     "precio_mayorista": 3290,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m49.webp"
   },
   {
@@ -269,7 +269,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Botella Sublimacion 10M50 Tso ml,a tapas Encajaindividual blanca TAMANO: 73 CM x 26cm CAPACIDAD 750mI PACKlNC caja 60 unidades",
     "precio_detalle": 3975,
     "precio_mayorista": 3710,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m50.webp"
   },
   {
@@ -282,7 +282,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Sohopero Sublimacion 10M70 Ln cajaindividual blanca TAMANO: 8 CM x15cm CAPACIDAD 465 ml PACKlNC caja 24 tinidades MATERIAL: VidrIO",
     "precio_detalle": 4035,
     "precio_mayorista": 3766,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m70.webp"
   },
   {
@@ -295,7 +295,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Mug Sublimacion 10M80 Ln cajaindividual blanca TAMANO: 6.5 CM x 15.5 cm CAPACIDAD 450ml PACKlNC caja 48 unidades MATLRIAL: Acero Inoxidable",
     "precio_detalle": 7485,
     "precio_mayorista": 6986,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m80.webp"
   },
   {
@@ -308,7 +308,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Botella Sublimacion 10M91 Lncajaindividual blanca TAMANO: 67CM x27.5cm CAPACIDAD 650mL PACKINC caia SO unidades MATLRlAL:Acero inoxidlable",
     "precio_detalle": 5835,
     "precio_mayorista": 5447,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m91.webp"
   },
   {
@@ -321,7 +321,7 @@
     "descripcion": "Termo Sublimacion 10M97 Ln cajaindividual blanca TAMANO: 68 CM x 19cm CAPACIDAD 350mL PACKING caia 24 unidades MATLRlAL:Acero inoxidlable",
     "precio_detalle": 7560,
     "precio_mayorista": 6048,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/10m97.webp"
   },
   {
@@ -334,7 +334,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Estuche de nylon con cierre Nylon Cod 1114 6 unds 10 unds 1 und 1.369 1.547",
     "precio_detalle": 1547,
     "precio_mayorista": 1114,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1114.webp"
   },
   {
@@ -347,7 +347,7 @@
     "descripcion": "Cod. 1117 Caja para tazon 11 onz $330 al por mayor 36 unidades 35O al DETALLE",
     "precio_detalle": 1117,
     "precio_mayorista": 894,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1117.webp"
   },
   {
@@ -360,7 +360,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Bolsa para vino Cod 1118 Bolsa papel grueso para botela de vino 39 cm alto 4 unds 10 und 1 unds 958",
     "precio_detalle": 1118,
     "precio_mayorista": 958,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1118.webp"
   },
   {
@@ -373,7 +373,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. cod.1190 Poliester Bolsa especial halloween NEGRO $ 594 Venta minima 20 unidades 831AL DETALLE",
     "precio_detalle": 1190,
     "precio_mayorista": 594,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/1190.webp"
   },
   {
@@ -386,7 +386,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 20 x 25 cm Cod 2000 Eruda 100% algodon HAPPY BIRTHDAY 6 unds",
     "precio_detalle": 2000,
     "precio_mayorista": 899,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2000.webp"
   },
   {
@@ -399,7 +399,7 @@
     "descripcion": "Escala por volumen:  |  |  |  |  | . IVA incluido. Bolsa MINI 16 x 14 cm fondo plan0 Crea  Cruda100%oalgodon C0d 2001 16cm 14 cm por ser parte de estediatanespecial",
     "precio_detalle": 5202,
     "precio_mayorista": 949,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2001.webp"
   },
   {
@@ -412,7 +412,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 30 x 35 cm Cod 2002 Enuda % algodon 100 30 x 35 6 unds",
     "precio_detalle": 2002,
     "precio_mayorista": 1136,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2002.webp"
   },
   {
@@ -425,7 +425,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 x 40 cm Cod 2003 Cruda % algodon 100 ni sumisa ni devota linda, libre y loca",
     "precio_detalle": 2003,
     "precio_mayorista": 1249,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2003.webp"
   },
   {
@@ -438,7 +438,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 40 x 45 ASA 75 CM C0d 2004 0%Cgodon 100 40 X 45 5 unds 1 und 16 unds",
     "precio_detalle": 2004,
     "precio_mayorista": 1397,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2004.webp"
   },
   {
@@ -451,7 +451,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa para vino 30 x 35 cm Cod 2202 Crea Enuda 100% algodon Division 4 unds",
     "precio_detalle": 2202,
     "precio_mayorista": 1250,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2005.webp"
   },
   {
@@ -464,7 +464,7 @@
     "descripcion": "Escala por volumen:  |  |  |  | . IVA incluido. Saco para vino Cod 2006 Enuda 100% algodon Botella de 750 ml WEONA",
     "precio_detalle": 2006,
     "precio_mayorista": 750,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2006.webp"
   },
   {
@@ -477,7 +477,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. saco para lentes 7 x 17   cm C0d 2007 Crea Enuda 100% Qlgodon 4 unds 12 unds",
     "precio_detalle": 2007,
     "precio_mayorista": 789,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2007.webp"
   },
   {
@@ -490,7 +490,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. 100%algodon Co0d 2013 Pechera mujer $ 2.844  Venta minimo 10 unidades 3.982 ALDETALLE",
     "precio_detalle": 3982,
     "precio_mayorista": 2013,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2013.webp"
   },
   {
@@ -503,7 +503,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Cd 2014 FELIZ DIA 100 PAPa Pechera hombre $ 2.844 Venta minimo 10 unidades 3.982 ALDETALLE",
     "precio_detalle": 3982,
     "precio_mayorista": 2014,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2014 padre.webp"
   },
   {
@@ -516,7 +516,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Pechera hombre Cod 2014 Cruda nea 100% Clgodon 4 unds 1 und 10 unds",
     "precio_detalle": 3697,
     "precio_mayorista": 2014,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2014.webp"
   },
   {
@@ -529,7 +529,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa Jumbo 50 x 50 cm Cod 2015 Cnuda %algodon 100 Con bolsillo 4 unds 1 und",
     "precio_detalle": 3233,
     "precio_mayorista": 2015,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2015.webp"
   },
   {
@@ -542,7 +542,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 40 x 35 fuelle 13 cm Cod 2016 Cruda 100% lgodon Con broche Con fuelle 4 unds",
     "precio_detalle": 3233,
     "precio_mayorista": 2016,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2016.webp"
   },
   {
@@ -555,7 +555,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 45 x 40 con cierre C0d 2017 Cnuda 100% lgodon Con Cierre 4 unds 1 und 10 unds",
     "precio_detalle": 3496,
     "precio_mayorista": 2017,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2017.webp"
   },
   {
@@ -568,7 +568,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 20 x 30 fuelle 9 cm Cod 2018 Cruda 100% Clgodon asa 45 cm fuelle 6 unds 1 und",
     "precio_detalle": 2018,
     "precio_mayorista": 1189,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2018.webp"
   },
   {
@@ -581,7 +581,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 X 40cm fondo negro C0d 2019 Erea Cnuda 100% lgodon MARION GIRL BISKETBAL ASA NEGRO OEXCUSES",
     "precio_detalle": 2145,
     "precio_mayorista": 1650,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2019.webp"
   },
   {
@@ -594,7 +594,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Funda 35 x 35 cm Cod 2020 Erea Enuda 100% Qlgodon Con cierre",
     "precio_detalle": 2020,
     "precio_mayorista": 1351,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2020.webp"
   },
   {
@@ -607,7 +607,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Funda 40 x 40 cm Cod 2023 Crea Enuda 100% algodon Con cierre 6 unds",
     "precio_detalle": 2140,
     "precio_mayorista": 1646,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2023.webp"
   },
   {
@@ -620,7 +620,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Monedero 13 x 8 cm Cod 2024 Cruda 100% Clgodon cierres de colores 6 unds 1 und 20 unds",
     "precio_detalle": 927,
     "precio_mayorista": 713,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2024.webp"
   },
   {
@@ -633,7 +633,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Estuche 20 x 10 cm Cod 2025 Cruda 100% lgodon cierres de colores 6 unds 1 und 20 unds",
     "precio_detalle": 1081,
     "precio_mayorista": 832,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2025.webp"
   },
   {
@@ -646,7 +646,7 @@
     "descripcion": "Funda para cubiertos 6 x 28 cm C0d 2026 Cruda 100%Clgodon Colgate 9 unds 1 und 24 unds",
     "precio_detalle": 542,
     "precio_mayorista": 434,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2026.webp"
   },
   {
@@ -659,7 +659,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 35 x 40 cm Cod 2030 Eruda 100% Clgodon USCHSU 6 unds 1 und 12 unds",
     "precio_detalle": 2030,
     "precio_mayorista": 1489,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2030.webp"
   },
   {
@@ -672,7 +672,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 40 x 45 cm C0d 2031 Eruda 100% lgodon 4 unds 1 und 12 unds 1.845",
     "precio_detalle": 2085,
     "precio_mayorista": 1604,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2031.webp"
   },
   {
@@ -685,7 +685,7 @@
     "descripcion": "Escala por volumen:  |  |  |  | . IVA incluido. Saco 15 x 20 cm Cod 2032 Cruda % algodon 1009 MON DOUDOU BISOUS 6 unds",
     "precio_detalle": 2032,
     "precio_mayorista": 583,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2032.webp"
   },
   {
@@ -698,7 +698,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 20 x 25 cm Cod 2033 Cruda 100% algodon 20 x 25 6 unds 1 und",
     "precio_detalle": 2033,
     "precio_mayorista": 845,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2033.webp"
   },
   {
@@ -711,7 +711,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco  25 x 30 cm Cod 2034 Crea nuda 100% algodon 25 X 30 6 unds",
     "precio_detalle": 2034,
     "precio_mayorista": 940,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2034.webp"
   },
   {
@@ -724,7 +724,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 30 x 35 cm Cod 2035 Erea Enuda 100% algodon 30 x 35 6 unds",
     "precio_detalle": 2035,
     "precio_mayorista": 1059,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2035.webp"
   },
   {
@@ -737,7 +737,7 @@
     "descripcion": "DIADELPADRE ventasmayoristas El. MEJOR ERES ABUELO SUPER PAPA",
     "precio_detalle": 899,
     "precio_mayorista": 719,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2036 (4).webp"
   },
   {
@@ -750,7 +750,7 @@
     "descripcion": "Escala por volumen:  |  |  |  | . IVA incluido. Bolsa Viajero 35 x 40 cm C0d 2036 Enuda 100% algodon HASTA AGOTAR 1.199 4 unds",
     "precio_detalle": 2036,
     "precio_mayorista": 1199,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2036.webp"
   },
   {
@@ -776,7 +776,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 x 40 cm Asa negra C0d 2051 Cruda 100% algodon 6 unds 1 und 16 unds 1.438",
     "precio_detalle": 2051,
     "precio_mayorista": 1250,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2051.webp"
   },
   {
@@ -789,7 +789,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. cm cordon negro Sac0 20 x 25 C0d 2057 Cruda 100% Clgodon 20 X 25 6 unds 1 und",
     "precio_detalle": 2057,
     "precio_mayorista": 845,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2057.webp"
   },
   {
@@ -802,7 +802,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 25 x 30 cm cordon negro C0d 2058 Crea Enuda 100% Clgodon 25 X 30 6 unds 1 und",
     "precio_detalle": 2058,
     "precio_mayorista": 940,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2058.webp"
   },
   {
@@ -815,7 +815,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. cm cordon negro Saco 30 x 35 Cod 2059 Crea Enuda 100% lgodon 30 x 35 6 unds",
     "precio_detalle": 2059,
     "precio_mayorista": 1059,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2059.webp"
   },
   {
@@ -828,7 +828,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa fondo plano 35 x 40 cm Cod 2064 Eruda 100% lgodon Con broche Fondo plano 4 unds",
     "precio_detalle": 2064,
     "precio_mayorista": 1549,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2064.webp"
   },
   {
@@ -841,7 +841,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Saco 8 x 8 cm Cod 2065 Cruda 100% algodon 10 unds 1 und 20 unds 460",
     "precio_detalle": 2065,
     "precio_mayorista": 520,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2065.webp"
   },
   {
@@ -854,7 +854,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 10 x 15 cm C0d 2066 Eruda 100% algodon ESTE PACOTE CONTEM",
     "precio_detalle": 2066,
     "precio_mayorista": 571,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2066.webp"
   },
   {
@@ -867,7 +867,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 45 x 40 Cod 2068 Erea Enuda 100% Clgodon BRONCOS 58 fondo plano",
     "precio_detalle": 2072,
     "precio_mayorista": 1594,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2068.webp"
   },
   {
@@ -880,7 +880,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Cosmetiquero 25 x 17 cm C0d 2070 Cruda 100% lgodon cierres de colores 6 unds 1 und 16 unds",
     "precio_detalle": 2070,
     "precio_mayorista": 940,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2070.webp"
   },
   {
@@ -893,7 +893,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 20 x 27 cm C0d 2081 Eruda 100% algodon ME Ana 6 unds 1 und",
     "precio_detalle": 2081,
     "precio_mayorista": 1000,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2081.webp"
   },
   {
@@ -906,7 +906,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 25 x 30 cm C0d 2082 Eruda 100% algodon EDICION LIMITADA 5 unds 1 und 16 unds",
     "precio_detalle": 2082,
     "precio_mayorista": 1119,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2082.webp"
   },
   {
@@ -919,7 +919,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa Ajustable 35 x 40 cm C0d 2091 Cruda 100% Clgodon asa ajustable 4 unds 1 und 10 unds",
     "precio_detalle": 2321,
     "precio_mayorista": 1785,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2091.webp"
   },
   {
@@ -932,7 +932,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa con cordon 35 x 40 cm Cod 2092 Cruda 100%algodon cordon para ajustar 4 unds 1 und 10 unds",
     "precio_detalle": 2092,
     "precio_mayorista": 1547,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2092.webp"
   },
   {
@@ -971,7 +971,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa para vino 30 x 35 cm Cod 2202 Crea Enuda 100% algodon Division 4 unds",
     "precio_detalle": 2202,
     "precio_mayorista": 1250,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/2202.webp"
   },
   {
@@ -984,7 +984,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 20 x 25 cm Poliesten Cod 3000 biestnech wevo Asa 35 cm COLOR CRUDO FELIZ",
     "precio_detalle": 3000,
     "precio_mayorista": 819,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3000.webp"
   },
   {
@@ -997,7 +997,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 30 x 35 cm Poliesten C0d 3002 biestnech 30 X 35 6 unds 1 und",
     "precio_detalle": 3002,
     "precio_mayorista": 951,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3002.webp"
   },
   {
@@ -1010,7 +1010,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 x 40 cm Foliesten Cod 3003 biestnech 35 X 40 6 unds 16 unds 1 und",
     "precio_detalle": 3003,
     "precio_mayorista": 1131,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3003.webp"
   },
   {
@@ -1023,7 +1023,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 x 40 cm Asa negra Cod 3004 Foliesten biestnech wevo COLOR CRUDO No encoje con el lavado no absorbe humedad",
     "precio_detalle": 3004,
     "precio_mayorista": 1131,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3004.webp"
   },
   {
@@ -1036,7 +1036,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 x 40 cm Asa negra Cod 3005 Foliesten biestnech wevo COLOR CRUDO No encoje con el lavado no absorbe humedad",
     "precio_detalle": 3005,
     "precio_mayorista": 1131,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3005.webp"
   },
   {
@@ -1049,7 +1049,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 x 40 cm Fondo negr0 C0d 3006 Foliesten biestnech nevo COLOR CRUDO No encoje con el lavado no absorbe humedad",
     "precio_detalle": 3006,
     "precio_mayorista": 1399,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3006.webp"
   },
   {
@@ -1062,7 +1062,7 @@
     "descripcion": "C0d3009 35 X35 Bieslrech Poliester Bolsa 35 x 35 cm asa  75 cm $975Venta minima 20 unidades 1.336 AL DETALLE",
     "precio_detalle": 1336,
     "precio_mayorista": 1069,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3009.webp"
   },
   {
@@ -1075,7 +1075,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Pechera nin@ Foliesten C0d 3012 biestnech 4-8 anos 4 unds 12 unds 1 und",
     "precio_detalle": 3012,
     "precio_mayorista": 1309,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3012.webp"
   },
   {
@@ -1088,7 +1088,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Pechera hombre Poliesten C0d 3014 biestnech 4 unds 10 unds 1 und 3.271",
     "precio_detalle": 3697,
     "precio_mayorista": 2844,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3014.webp"
   },
   {
@@ -1101,7 +1101,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Cojin 35 x 35 Foliesten Cod 3016 biestnech 35 X 35 6 unds 12 unds 1 und",
     "precio_detalle": 3016,
     "precio_mayorista": 1550,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3016.webp"
   },
   {
@@ -1114,7 +1114,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Cojin 40 x 40 Foliesten Cod 3017 biestnech 40 X 40 6 unds 12 unds 1 und",
     "precio_detalle": 3017,
     "precio_mayorista": 2264,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3017.webp"
   },
   {
@@ -1127,7 +1127,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Funda para cojin 30 x 30 Foliesten Cod 3019 biestnech 30 X 30 4 unds 12 unds 1 und",
     "precio_detalle": 3019,
     "precio_mayorista": 1131,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3019.webp"
   },
   {
@@ -1140,7 +1140,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Funda para cojin 35 x 35 Poliesten C0d 3020 biestnech 35 X 35 4 unds 12 unds 1 und",
     "precio_detalle": 3020,
     "precio_mayorista": 1250,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3020.webp"
   },
   {
@@ -1153,7 +1153,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Funda para cojin 40 x 40 Foliesten C0d 3021 biestnech 40 X 40 4 unds 1 und 12 unds",
     "precio_detalle": 3021,
     "precio_mayorista": 1546,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3021.webp"
   },
   {
@@ -1166,7 +1166,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Funda rellena 30 x 30 cm Foliesten Cod 3022 biestnech Algodon suelto ................................ 6 unds",
     "precio_detalle": 3022,
     "precio_mayorista": 1533,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3022.webp"
   },
   {
@@ -1179,7 +1179,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Monedero 13 x 8 cm Foliesten crudo Cod 3024 biestnech Con forro interior de crea cruda. 4 unds 12 unds",
     "precio_detalle": 3024,
     "precio_mayorista": 1070,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3024.webp"
   },
   {
@@ -1192,7 +1192,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Estuche 20 x 10 Foliesten crudo Cod 3025 biestnech Con forro interior de crea cruda. ....... 4 unds",
     "precio_detalle": 3025,
     "precio_mayorista": 1189,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3025.webp"
   },
   {
@@ -1205,7 +1205,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 30 x 35 cm Foliesten C0d 3030 biestnech 6 unds 15 unds 1 und 1.392",
     "precio_detalle": 3030,
     "precio_mayorista": 1210,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3030.webp"
   },
   {
@@ -1218,7 +1218,7 @@
     "descripcion": "Escala por volumen:  |  |  |  | . IVA incluido. Mochila nin@ 20 x 27 Foliesten C0d 3032 biestnech Algodon suelto BAGO 780 6 unds",
     "precio_detalle": 3032,
     "precio_mayorista": 780,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3032.webp"
   },
   {
@@ -1231,7 +1231,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 25 x 30 cm Poliesten Cod 3033 biestnech 25 X 30 6 unds 1 und 20 unds",
     "precio_detalle": 3033,
     "precio_mayorista": 776,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3033.webp"
   },
   {
@@ -1244,7 +1244,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 20 x 25 5cm Poliesten Cod 3034 biestnech 20 X25 6 unds 20 unds",
     "precio_detalle": 3034,
     "precio_mayorista": 674,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3034.webp"
   },
   {
@@ -1257,7 +1257,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 30 x 35 cm Poliesten Cod 3035 biestnech 30 X 35 6 unds 1 und 20 unds",
     "precio_detalle": 3035,
     "precio_mayorista": 859,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3035.webp"
   },
   {
@@ -1270,7 +1270,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 20 x 25 cm Cordon negro Foliesten C0d 3040 biestnech 20 X 25 6 unds 1 und 20 unds",
     "precio_detalle": 3040,
     "precio_mayorista": 594,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3040.webp"
   },
   {
@@ -1283,7 +1283,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Saco 25 x 30 cm Cordon negro Foliesten C0d 3041 biestnech 25 X 30 6 unds 1 und 20 unds",
     "precio_detalle": 3041,
     "precio_mayorista": 690,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3041.webp"
   },
   {
@@ -1296,7 +1296,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 30 x 35 cm Cordon negro Foliesten C0d 3042 biestnech 30 X 35 6 unds 20 unds 1 und",
     "precio_detalle": 3042,
     "precio_mayorista": 774,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3042.webp"
   },
   {
@@ -1309,7 +1309,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 30 x 35 cm Cordon negro Foliesten C0d 3046 biestnech 6 unds 15 unds 1 und 1.392",
     "precio_detalle": 3046,
     "precio_mayorista": 1210,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3046.webp"
   },
   {
@@ -1322,7 +1322,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 35 x 40 cm Foliesten C0d 3047 biestnech cordon negro i blanco 4 unds 1 und",
     "precio_detalle": 3047,
     "precio_mayorista": 1339,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3047.webp"
   },
   {
@@ -1335,7 +1335,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 35 X 40 cm od 3 3048 COLOR CRUDO unds und unds",
     "precio_detalle": 3048,
     "precio_mayorista": 1339,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3048.webp"
   },
   {
@@ -1348,7 +1348,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco para taza 17 x 19 cm Foliesten C0d 3050 biestnech cordon negro é blanco 6 unds 1 und",
     "precio_detalle": 3050,
     "precio_mayorista": 584,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3050.webp"
   },
   {
@@ -1361,7 +1361,7 @@
     "descripcion": "SRTA Cd3060 BAGO Biestrech Poliester Bolsa dulcera 21 * 27 cm $594 Venta minimo 25 unidades 831ALDETALLE",
     "precio_detalle": 594,
     "precio_mayorista": 475,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3060.webp"
   },
   {
@@ -1374,7 +1374,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. llavero mini- cojin Poliesten C0d 3061 biestnech Incluye argolla 10 unds 25 unds",
     "precio_detalle": 3061,
     "precio_mayorista": 574,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3061.webp"
   },
   {
@@ -1387,7 +1387,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Cosmetiquero 25x 19 cm bicolor Poliesten biestnech C0d 3064 BICOLOR NEGRO/CRUDO Delante Atras fondo plano con forro interno Crea Cruda ",
     "precio_detalle": 3064,
     "precio_mayorista": 1500,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3064.webp"
   },
   {
@@ -1400,7 +1400,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Comestiguero 25 x 17 cm Foliesten C0d 3070 biestnech Color blanco y crudo Con forro interior de crea cruda. 4 unds",
     "precio_detalle": 3070,
     "precio_mayorista": 1427,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3070.webp"
   },
   {
@@ -1413,7 +1413,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa con bolsillo 35 x 40 cm Foliesten Cod 3071 biestnech COLOR CRUDO con bolsillo interno 200 grados",
     "precio_detalle": 3071,
     "precio_mayorista": 1845,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3071.webp"
   },
   {
@@ -1426,7 +1426,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 40 x 45 cm Foliesten C0d 3080 biestnech 40 X 45 6 unds 16 unds 1 und",
     "precio_detalle": 3080,
     "precio_mayorista": 1299,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3080.webp"
   },
   {
@@ -1439,7 +1439,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 25 x 30 cm Foliesten C0d 3082 biestnech 6 unds 15 unds 1 und 1.257",
     "precio_detalle": 3082,
     "precio_mayorista": 1093,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3082.webp"
   },
   {
@@ -1452,7 +1452,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 20 x 25 5cm Poliesten C0d 3090 biestnech 20 X25 6 unds 20 unds",
     "precio_detalle": 3090,
     "precio_mayorista": 674,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3090.webp"
   },
   {
@@ -1465,7 +1465,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 25 x 30 cm 3091 od 3 25 X 30 unds unds",
     "precio_detalle": 3091,
     "precio_mayorista": 776,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3091.webp"
   },
   {
@@ -1478,7 +1478,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 30 x 35 cm 3092 od 30 X 35 unds unds 20",
     "precio_detalle": 3092,
     "precio_mayorista": 859,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3092.webp"
   },
   {
@@ -1491,7 +1491,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 20 X 25 cm 3095 po 20 X 25 unds",
     "precio_detalle": 3095,
     "precio_mayorista": 699,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3095.webp"
   },
   {
@@ -1504,7 +1504,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 2 25 x 30 cm od 3 3096 25 X 30 unds unds",
     "precio_detalle": 3096,
     "precio_mayorista": 801,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3096.webp"
   },
   {
@@ -1517,7 +1517,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 30 x 35 cm 3097 od 30 X 35 unds unds und",
     "precio_detalle": 3097,
     "precio_mayorista": 884,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/3097.webp"
   },
   {
@@ -1530,7 +1530,7 @@
     "descripcion": "Escala por volumen:  |  |  |  | . IVA incluido. Bolsa 30 x 35 Foliesten Cod 4000 biestnech BAGO SOMOSLASMLETAS DELAS BRUJAS",
     "precio_detalle": 4000,
     "precio_mayorista": 850,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4000.webp"
   },
   {
@@ -1543,7 +1543,7 @@
     "descripcion": "Escala por volumen:  |  |  |  | . IVA incluido. Bolsa 35 x 40 Foliesten Cod 4001 biestnech BAGO EAT SLEEP RUN",
     "precio_detalle": 4001,
     "precio_mayorista": 999,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4001.webp"
   },
   {
@@ -1556,7 +1556,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Pechera hombre Foliesten Cod 4005 biestnech Con Bolsillo 4 unds 10 unds 1 und",
     "precio_detalle": 4005,
     "precio_mayorista": 2844,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4005.webp"
   },
   {
@@ -1569,7 +1569,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Mochila 35 x 40 cm Foliesten Cod 4008 biestnech 4 unds 12 unds 1 und 1.597",
     "precio_detalle": 4008,
     "precio_mayorista": 1389,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4008.webp"
   },
   {
@@ -1582,7 +1582,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Biestrech Poliester C0d 4010 35 x 40 Bolsa 35 x 40 cm asa 75cm con cierre $1.761 Venta minima 12 2466 ALDETALLE",
     "precio_detalle": 4010,
     "precio_mayorista": 1761,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4010.webp"
   },
   {
@@ -1595,7 +1595,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Estuche Elegant negro 100% algodon Cod 4011 cierres metalico y borla 4 unds 12 unds 1 und",
     "precio_detalle": 4011,
     "precio_mayorista": 1785,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4011.webp"
   },
   {
@@ -1608,7 +1608,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 40 X 45 algodon Cod 4012 LOVE THEM SPOIL THEM Jiveihen bach EGRANDMALIFE 6 unds",
     "precio_detalle": 4012,
     "precio_mayorista": 2049,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4012.webp"
   },
   {
@@ -1621,7 +1621,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Cosmetiguero 20 x 17 con forro Poliesten C0d 4013 biestnech forro interno en crea cruda cierres de colores 4 unds",
     "precio_detalle": 4013,
     "precio_mayorista": 1427,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4013.webp"
   },
   {
@@ -1634,7 +1634,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Monedero 13 x 8 con forro Poliesten Cod 4014 biestnech forro interno en crea cruda cierres de colores 4 unds",
     "precio_detalle": 4014,
     "precio_mayorista": 1070,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4014.webp"
   },
   {
@@ -1647,7 +1647,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Estuche 20 x 10 con forro Poliesten Cod 4015 biestnech 4 unds 12 unds 1 und 1.367",
     "precio_detalle": 4015,
     "precio_mayorista": 1189,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4015.webp"
   },
   {
@@ -1660,7 +1660,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. PECHERAMUJERAJUSTABLE AJUSTABLE Cod 4020 BOLSILLO Resistente DIVIDIDO Durable Baja absorcion de humedad",
     "precio_detalle": 5851,
     "precio_mayorista": 4020,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4020.webp"
   },
   {
@@ -1673,7 +1673,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Policotex Saco 2 25 20  cm od 4033 cm cm",
     "precio_detalle": 4033,
     "precio_mayorista": 875,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4033.webp"
   },
   {
@@ -1686,7 +1686,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 2 25 X 30 cod 4034 cm cm cm 30",
     "precio_detalle": 4034,
     "precio_mayorista": 970,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4034.webp"
   },
   {
@@ -1699,7 +1699,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Saco 30 X 35 policotex Policotex Cod 4035 cm 30 cm 25 cm 20 cm 25 cm",
     "precio_detalle": 4035,
     "precio_mayorista": 1089,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4035.webp"
   },
   {
@@ -1712,7 +1712,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 30 x 35 100% algodon Cod 4050 30 x 35 6 unds 12 unds 1 und 1.533",
     "precio_detalle": 4050,
     "precio_mayorista": 1333,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4050.webp"
   },
   {
@@ -1725,7 +1725,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 34 x 39 100% algodon Cod 4052 4 unds 12 unds 1 und 2.051 2.319",
     "precio_detalle": 4052,
     "precio_mayorista": 1784,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4052.webp"
   },
   {
@@ -1738,7 +1738,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 35 X 40 Policotex Cod 4053 35 X 40 4 unds 10 unds 1 und 1.778",
     "precio_detalle": 4053,
     "precio_mayorista": 1546,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4053.webp"
   },
   {
@@ -1751,7 +1751,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 40 X 45 Policotex Cod 4054 40 X 45 4 unds 10 unds 1 und 2.008",
     "precio_detalle": 4054,
     "precio_mayorista": 1746,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4054.webp"
   },
   {
@@ -1764,7 +1764,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Bolsa 45 x 40 fondo plan0 Policotex Cod 4055 Fondo plano 4 unds 10 unds 1 und",
     "precio_detalle": 4055,
     "precio_mayorista": 1890,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4055.webp"
   },
   {
@@ -1777,7 +1777,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido.  Mochila 35  X 40 d 4056 od unds unds 41 und",
     "precio_detalle": 4056,
     "precio_mayorista": 1780,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/4056.webp"
   },
   {
@@ -1790,7 +1790,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Papel Sublipluss A4 Cod 5001 Para sublimacion en géneros Venta por unidades claros de poliéster hojas A4 Sulli-plss",
     "precio_detalle": 5001,
     "precio_mayorista": 999,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/5001 .webp"
   },
   {
@@ -1803,7 +1803,7 @@
     "descripcion": "Sublimacion direcla C0d 5003 TERMINACION OPACO Caja para tazon 11 onzas Carton sublimable $200 minimo de venta 36 unidades $333 AL DETALLE",
     "precio_detalle": 5003,
     "precio_mayorista": 4002,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/5003.webp"
   },
   {
@@ -1829,7 +1829,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. lona Natural Cod. 6001 color crudo Aldodon sublimable Sublimacion directa 70% algodon 30% poliester NO encoje con el lavado",
     "precio_detalle": 6001,
     "precio_mayorista": 940,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6001.webp"
   },
   {
@@ -1842,7 +1842,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. lona Natural Co0d. 6003 color crudo Aldodon sublimable Sublimacion directa 70% algodon 30% p0liester Opeaelra oo alooua On",
     "precio_detalle": 6003,
     "precio_mayorista": 1427,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6003.webp"
   },
   {
@@ -1855,7 +1855,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. estuche 20 x 10 Cod 6010 Natunal Cierres de colores 12 Und 4 unds 1 unid 1.402",
     "precio_detalle": 6010,
     "precio_mayorista": 1219,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6010.webp"
   },
   {
@@ -1868,7 +1868,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Monedero 13 x 8 cm Cod 6011 algodon Cierres de colores 4 unds 12 unid 1 unds 1.265",
     "precio_detalle": 6011,
     "precio_mayorista": 1100,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6011.webp"
   },
   {
@@ -1881,7 +1881,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. cosmetiguero 25 x 17 lona Cod 6012 algodon100 cierres de colores 4 unds 12 unid 1 unds",
     "precio_detalle": 6012,
     "precio_mayorista": 1467,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6012.webp"
   },
   {
@@ -1894,7 +1894,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. neceser 17 x 10 x 9 cm Lona Cod 6013 algodon100 cierres de colores 4 unds 12 unid 1 unds",
     "precio_detalle": 6013,
     "precio_mayorista": 1467,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6013.webp"
   },
   {
@@ -1907,7 +1907,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Papel Sublifaric gold A4 Cod 7000 Para generos oscuros o claros 1 und 1.409",
     "precio_detalle": 7000,
     "precio_mayorista": 1409,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/7000.webp"
   },
   {
@@ -1920,7 +1920,7 @@
     "descripcion": "Papel siliconado A4 Cod 7001 PAPEL PROTECTOR PARA SUBLIMACION, DTF, TRANSFER... 1 und 200",
     "precio_detalle": 7001,
     "precio_mayorista": 5601,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/7001.webp"
   },
   {
@@ -1933,7 +1933,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Papel Sublimacion A4 Cod 7002 Para sublimacion Venta por resma de directa 100 hojas A4 genéros claros 70% poliéster",
     "precio_detalle": 7002,
     "precio_mayorista": 4499,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/7002.webp"
   },
   {
@@ -1946,7 +1946,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Balde 22  cm de diametro Cod 7004 Bolsa papel grueso para botela de vino 39 cm alto PAPA www.choco-freak.com FdizDia",
     "precio_detalle": 7004,
     "precio_mayorista": 3927,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/7004.webp"
   },
   {
@@ -1959,7 +1959,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Balde 22  de diametro  cm Cod 7005 PAPA www.choco-freak.com FdizDia alMejor",
     "precio_detalle": 7005,
     "precio_mayorista": 3927,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/7005.webp"
   },
   {
@@ -1972,7 +1972,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Neceser 25 x 17 cm C0d 8001 Poliesten Sun Out cierres de colores 4 unds 1 und 10 unds",
     "precio_detalle": 8001,
     "precio_mayorista": 2022,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/8001.webp"
   },
   {
@@ -1985,7 +1985,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Monedero 13 x 10 cm Cod 8002 Poliesten Sun Out Incluye Accesorio 4 unds 1 und 10 unds",
     "precio_detalle": 8002,
     "precio_mayorista": 1427,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/8002.webp"
   },
   {
@@ -1998,7 +1998,7 @@
     "descripcion": "Escala por volumen:  |  |  | . IVA incluido. Cartera 31 x 21 cm Cod 8003 Poliesten Sun Out con Objetillo < 4 unds 1 und 10 unds",
     "precio_detalle": 8003,
     "precio_mayorista": 3558,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/8003.webp"
   },
   {
@@ -2011,7 +2011,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Poliester C0d.8004 SunOut Correa para cartera con mosqueton 1oOcm $1188 Venta minimo 10 unidades 1664 ALDETALLE",
     "precio_detalle": 8004,
     "precio_mayorista": 1188,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/8004.webp"
   },
   {
@@ -2037,7 +2037,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Cod. 9000 SUBLIMACION DIRECTA COLORCRUDO POLIESTER Sublimacion directa 200 grados 80 segundos NO encoje con el lavado",
     "precio_detalle": 9000,
     "precio_mayorista": 1299,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/9000.webp"
   },
   {
@@ -2050,7 +2050,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Pnodl.Especial PAPA www.choco-freak.com FdizDia alMejor PAPA Balde 22 cm diametro 20 cm alto",
     "precio_detalle": 4990,
     "precio_mayorista": 4620,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/balde 22 cm.webp"
   },
   {
@@ -2102,7 +2102,7 @@
     "descripcion": "PRODUCTO DE PoliestenBiestrech TEMPORADA Bolsa de pascua  20 x 20 cm con orejitas de pano-lenci $928 Venta minima 12 unidades",
     "precio_detalle": 928,
     "precio_mayorista": 742,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/bolsa pascua.webp"
   },
   {
@@ -2115,7 +2115,7 @@
     "descripcion": "DIADELPADRE ventasmaoristas MEJOR MEJOR EL ERESI ABUELO PAPA",
     "precio_detalle": 899,
     "precio_mayorista": 719,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/coji9n padre.webp"
   },
   {
@@ -2128,7 +2128,7 @@
     "descripcion": "DIADEL NINO ventasmayoristas COJINCITOS TEMATICA DIA dEL NINO medida 25 x 25 cm minimos 15 unidades $900 disenos elegidos",
     "precio_detalle": 900,
     "precio_mayorista": 720,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/cojin niño.webp"
   },
   {
@@ -2193,7 +2193,7 @@
     "descripcion": "En En la Minutos parrilla mando yo Ur aplanyo purr el asador",
     "precio_detalle": 1500,
     "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/pechera azul (2).webp"
   },
   {
@@ -2232,7 +2232,7 @@
     "descripcion": "Pnomo bolsa algodon AS &o etamoar Jull color tamano carta Merry Christmas",
     "precio_detalle": 550,
     "precio_mayorista": 440,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo 1 (2).webp"
   },
   {
@@ -2271,7 +2271,7 @@
     "descripcion": "nomo #3 100% algodon Sulli-pluss PASO1:IMAGEN PASO2:PREPARACION este Bolsa 35 * 40 cm +",
     "precio_detalle": 2389,
     "precio_mayorista": 1911,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo 3.webp"
   },
   {
@@ -2323,7 +2323,7 @@
     "descripcion": "",
     "precio_detalle": 1500,
     "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (10).webp"
   },
   {
@@ -2336,7 +2336,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Prodl.Especial PAPA www.choco-freak.com FelizDia alMejor PAPA Balde 22 cm diametro 20 cm alto",
     "precio_detalle": 4990,
     "precio_mayorista": 4620,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (2).webp"
   },
   {
@@ -2349,7 +2349,7 @@
     "descripcion": "Prodl.Especial Felizdiadel Padre Cojin 30 x 30 cm $ 3900 Valor incluye diseno personalizado",
     "precio_detalle": 3900,
     "precio_mayorista": 3120,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (3).webp"
   },
   {
@@ -2362,7 +2362,7 @@
     "descripcion": "Prodl.Especial del Telit PER Pa dve TAZA 11 OZ + bolsita genero $ 3800 valor incluye diseno personalizado",
     "precio_detalle": 3800,
     "precio_mayorista": 3040,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (4).webp"
   },
   {
@@ -2375,7 +2375,7 @@
     "descripcion": "Prodl.Especial fappySuperDadsDas? Estuche 25 x 17 cm $ 2900 valor incluye diseno personalizado",
     "precio_detalle": 2900,
     "precio_mayorista": 2320,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (5).webp"
   },
   {
@@ -2388,7 +2388,7 @@
     "descripcion": "Escala por volumen:  | . IVA incluido. Prol.Especial mod 1 MEJOR PAPA \"tedes FELIZDiA PADRE mod. 3",
     "precio_detalle": 1200,
     "precio_mayorista": 1000,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (6).webp"
   },
   {
@@ -2401,7 +2401,7 @@
     "descripcion": "",
     "precio_detalle": 1500,
     "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (7).webp"
   },
   {
@@ -2427,7 +2427,7 @@
     "descripcion": "Lona Natunal",
     "precio_detalle": 1500,
     "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea (9).webp"
   },
   {
@@ -2440,7 +2440,7 @@
     "descripcion": "",
     "precio_detalle": 1500,
     "precio_mayorista": 1200,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo crea.webp"
   },
   {
@@ -2453,7 +2453,7 @@
     "descripcion": "lona Natural color crudo PRODUCTODE TEMPORADA Aldodon sublimable NO encoje con el lavado 70% algodon 30% poliester Sublimacion directa Bolsa 35 x 40 cm asa",
     "precio_detalle": 1700,
     "precio_mayorista": 1360,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo dia de la mujer.webp"
   },
   {
@@ -2466,7 +2466,7 @@
     "descripcion": "Poliester nomo COLORCRUDO POLILSTLR Suhlimacion directa 200 grados 80 segundos NO encoje con el lavado Bolsa 35 x 4O cm asa 75 cm LONABEL",
     "precio_detalle": 2400,
     "precio_mayorista": 1920,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo lona.webp"
   },
   {
@@ -2492,7 +2492,7 @@
     "descripcion": "Bolsa 35 x 4O cm asa 75 cm NEGRO + cosmetiquero c/forro NEGRO 1.999 + 1iVa",
     "precio_detalle": 1999,
     "precio_mayorista": 1599,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo negro.webp"
   },
   {
@@ -2557,7 +2557,7 @@
     "descripcion": "Escala por volumen:  |  | . IVA incluido. Lona Natural Cod. 6012 7 colores disponibles Aldodonsublimable Sublimacion directa 70%algodon 30%poliester CONFORRO",
     "precio_detalle": 6012,
     "precio_mayorista": 1189,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/6012.webp"
   },
   {
@@ -2570,7 +2570,7 @@
     "descripcion": "nomo#1 100%algodom Bolsa 35 * 40 cm Crea Cruda + cosmetiquero Crea Cruda $2023",
     "precio_detalle": 2023,
     "precio_mayorista": 1618,
-    "iva_incluido": true,
+    "iva_incluido": false,
     "imagen": "./src/assets/products_opt/promo 1.webp"
   }
 ]
